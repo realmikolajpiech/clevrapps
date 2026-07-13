@@ -45,16 +45,8 @@
 }
 
 ::view-transition-image-pair(app-nav-active) {
-  isolation: isolate;
   overflow: clip;
   border-radius: 999px;
-}
-
-::view-transition-old(app-nav-active),
-::view-transition-new(app-nav-active) {
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: normal;
 }
 
 ::view-transition-group(project-title) { z-index: 12; }
