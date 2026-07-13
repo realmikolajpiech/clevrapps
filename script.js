@@ -89,10 +89,10 @@ document.querySelectorAll("[data-copy-email]").forEach((button) => {
       if (state) state.textContent = "Copied";
       setTimeout(() => {
         button.classList.remove("is-copied");
-        if (state) state.textContent = "Click to copy";
+        if (state) state.textContent = "";
       }, 2200);
     } catch {
-      if (state) state.textContent = "Select and copy";
+      if (state) state.textContent = "Copy failed";
     }
   });
 });

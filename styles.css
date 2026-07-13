@@ -589,7 +589,10 @@ textarea {
 }
 
 .project-topline img {
-  width: clamp(3rem, 5vw, 4.7rem);
+  --project-icon-size: clamp(3rem, 5vw, 4.7rem);
+  width: var(--project-icon-size);
+  height: var(--project-icon-size);
+  flex: 0 0 var(--project-icon-size);
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 24%;
@@ -1045,10 +1048,10 @@ textarea {
   position: relative;
   z-index: 2;
   max-width: 70rem;
-  display: grid;
-  grid-template-columns: minmax(13rem, 0.42fr) minmax(0, 1fr);
+  display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  border-block: 1px solid var(--ink);
 }
 
 .contact-form-trigger,
@@ -1061,16 +1064,18 @@ textarea {
 }
 
 .contact-form-trigger {
-  min-height: 5.4rem;
+  flex: 0 0 auto;
+  min-height: 3.9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 1.15rem 1rem 1.4rem;
+  margin: 0.6rem 0;
+  padding: 0.55rem 0.65rem 0.55rem 1.05rem;
   color: white;
   background: var(--ink);
-  border-radius: 1.3rem;
-  font-size: 0.86rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
   font-weight: 600;
   text-align: left;
   transition: background 200ms ease, transform 200ms ease;
@@ -1084,8 +1089,8 @@ textarea {
 .contact-form-trigger i {
   display: grid;
   place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.65rem;
+  height: 2.65rem;
   color: var(--ink);
   background: var(--paper-bright);
   border-radius: 50%;
@@ -1099,45 +1104,41 @@ textarea {
 }
 
 .email-copy {
+  position: relative;
+  flex: 1 1 auto;
   min-width: 0;
-  min-height: 5.4rem;
+  min-height: 5.1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
   padding: 1rem 0;
   color: var(--ink);
   background: transparent;
-  border-block: 1px solid var(--ink);
   text-align: left;
+  cursor: copy;
 }
 
-.email-copy > span {
+.email-copy-value {
   min-width: 0;
-  font-size: clamp(1.25rem, 2.6vw, 2.7rem);
+  font-size: clamp(1.25rem, 3vw, 3rem);
   font-weight: 500;
   letter-spacing: -0.045em;
   overflow-wrap: anywhere;
+  transition: color 180ms ease;
 }
 
-.email-copy small {
+.copy-feedback {
   flex: 0 0 auto;
-  padding: 0.45rem 0.7rem;
-  color: var(--muted);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 0.61rem;
+  color: var(--red);
+  font-size: 0.64rem;
   font-weight: 600;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
-  transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
-.email-copy:hover small,
-.email-copy.is-copied small {
-  color: white;
-  background: var(--red);
-  border-color: var(--red);
+.email-copy:hover .email-copy-value,
+.email-copy.is-copied .email-copy-value {
+  color: var(--red);
 }
 
 .contact-form-panel {
@@ -1222,19 +1223,9 @@ textarea {
 .form-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1.5rem;
   margin-top: 1.6rem;
-}
-
-.form-footer p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.68rem;
-}
-
-.form-footer a {
-  border-bottom: 1px solid currentColor;
 }
 
 .form-submit {
@@ -1968,10 +1959,10 @@ textarea {
   .principles li { grid-template-columns: 2rem 1fr; }
   .principles li p { grid-column: 2; }
   .contact h2 { font-size: 3.45rem; }
-  .contact-actions { grid-template-columns: 1fr; }
-  .contact-form-trigger,
-  .email-copy { min-height: 4.6rem; }
-  .email-copy > span { font-size: 1.08rem; }
+  .contact-actions { align-items: stretch; flex-direction: column; gap: 0; padding: 0.7rem 0; }
+  .email-copy { min-height: 3.8rem; padding: 0.6rem 0; }
+  .email-copy-value { font-size: 1.08rem; }
+  .contact-form-trigger { width: 100%; min-height: 4.1rem; margin: 0.35rem 0 0; }
   .form-grid { grid-template-columns: 1fr; }
   .form-message { grid-column: auto; }
   .form-footer { align-items: flex-start; flex-direction: column; }
