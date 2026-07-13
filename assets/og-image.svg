@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(90 40) rotate(35) scale(620 430)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ee3f36" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#ee3f36" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#171a1d" flood-opacity=".14"/>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="760" y="76" width="386" height="478" rx="82"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="#f4f1ec"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(62 50)">
+    <rect width="42" height="42" rx="13" fill="#171a1d"/>
+    <circle cx="14" cy="21" r="2" fill="#f4f1ec"/>
+    <circle cx="21" cy="21" r="2" fill="#f4f1ec"/>
+    <circle cx="28" cy="21" r="2" fill="#f4f1ec"/>
+    <text x="58" y="29" fill="#171a1d" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="-1">Clevr Apps</text>
+  </g>
+
+  <text x="62" y="258" fill="#171a1d" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="500" letter-spacing="-5">We make apps</text>
+  <text x="62" y="359" fill="#ee3f36" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-style="italic" letter-spacing="-5">people keep.</text>
+  <text x="66" y="536" fill="#6d6d68" font-family="'Courier New', monospace" font-size="15" letter-spacing="2.4">INDEPENDENT PRODUCT STUDIO · IOS · ANDROID · WEB</text>
+
+  <rect x="760" y="76" width="386" height="478" rx="82" fill="#fff" fill-opacity=".68" stroke="#fff" filter="url(#shadow)"/>
+  <image href="clevrapps-logo-640.webp" x="760" y="122" width="386" height="386" preserveAspectRatio="xMidYMid slice" clip-path="url(#cardClip)"/>
+</svg>

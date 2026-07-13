@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://clevrapps.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-07-13</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/og-image.png</image:loc>
+      <image:title>Clevr Apps — We make apps people keep</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/apps/trailo/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/trailo-800.webp</image:loc>
+      <image:title>Trailo AI travel planner</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/apps/subby/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/subby-800.webp</image:loc>
+      <image:title>Subby subscription manager</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/apps/doso/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/doso-800.webp</image:loc>
+      <image:title>Doso medication and health tracker</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/apps/solvee/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/solvee.webp</image:loc>
+      <image:title>Solvee AI homework helper</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <lastmod>2026-05-29</lastmod>
   </url>
 </urlset>

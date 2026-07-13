@@ -45,6 +45,96 @@ if (menuButton && siteNav) {
   });
 }
 
+const contactTrigger = document.querySelector("[data-contact-open]");
+const contactPanel = document.querySelector("#contact-form-panel");
+const contactForm = document.querySelector("#contact-form");
+const formStatus = document.querySelector("[data-form-status]");
+
+if (contactTrigger && contactPanel) {
+  contactTrigger.addEventListener("click", () => {
+    const willOpen = contactPanel.hidden;
+    contactPanel.hidden = !willOpen;
+    contactTrigger.setAttribute("aria-expanded", String(willOpen));
+
+    if (willOpen) {
+      requestAnimationFrame(() => {
+        contactPanel.querySelector("input:not([type='hidden'])")?.focus({ preventScroll: true });
+        contactPanel.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "nearest" });
+      });
+    }
+  });
+}
+
+document.querySelectorAll("[data-copy-email]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const email = button.dataset.copyEmail;
+    const state = button.querySelector("[data-copy-state]");
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(email);
+      } else {
+        const helper = document.createElement("textarea");
+        helper.value = email;
+        helper.setAttribute("readonly", "");
+        helper.style.position = "fixed";
+        helper.style.opacity = "0";
+        document.body.appendChild(helper);
+        helper.select();
+        document.execCommand("copy");
+        helper.remove();
+      }
+
+      button.classList.add("is-copied");
+      if (state) state.textContent = "Copied";
+      setTimeout(() => {
+        button.classList.remove("is-copied");
+        if (state) state.textContent = "Click to copy";
+      }, 2200);
+    } catch {
+      if (state) state.textContent = "Select and copy";
+    }
+  });
+});
+
+if (contactForm && formStatus) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const submit = contactForm.querySelector("button[type='submit']");
+    const submitLabel = submit?.querySelector("span");
+    const originalLabel = submitLabel?.textContent || "Send message";
+
+    formStatus.className = "form-status";
+    formStatus.textContent = "";
+    if (submit) submit.disabled = true;
+    if (submitLabel) submitLabel.textContent = "Sending…";
+
+    try {
+      const payload = Object.fromEntries(new FormData(contactForm).entries());
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) throw new Error("Submission failed");
+
+      contactForm.reset();
+      formStatus.classList.add("is-success");
+      formStatus.textContent = "Message sent. Mikołaj will get back to you shortly.";
+    } catch {
+      formStatus.classList.add("is-error");
+      formStatus.textContent = "The message could not be sent. Please copy the email address above and write directly.";
+    } finally {
+      if (submit) submit.disabled = false;
+      if (submitLabel) submitLabel.textContent = originalLabel;
+    }
+  });
+}
+
 const revealItems = document.querySelectorAll(".reveal");
 
 if (reducedMotion || !("IntersectionObserver" in window)) {
