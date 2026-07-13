@@ -1,2 +1,6 @@
 https://www.clevrapps.com/* https://clevrapps.com/:splat 301!
 /index.html / 301!
+/apps/trailo/index.html /apps/trailo/ 301!
+/apps/subby/index.html /apps/subby/ 301!
+/apps/doso/index.html /apps/doso/ 301!
+/apps/solvee/index.html /apps/solvee/ 301!

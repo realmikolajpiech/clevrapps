@@ -15,6 +15,9 @@
       <image:loc>https://clevrapps.com/assets/apps/trailo-800.webp</image:loc>
       <image:title>Trailo AI travel planner</image:title>
     </image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/trailo-2.webp</image:loc><image:title>Trailo trip overview</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/trailo-3.webp</image:loc><image:title>Trailo ticket planning</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/trailo-4.webp</image:loc><image:title>Trailo trip budget</image:title></image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/apps/subby/</loc>
@@ -23,6 +26,8 @@
       <image:loc>https://clevrapps.com/assets/apps/subby-800.webp</image:loc>
       <image:title>Subby subscription manager</image:title>
     </image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/subby-2.webp</image:loc><image:title>Subby subscriptions and renewals</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/subby-3.webp</image:loc><image:title>Subby spending analytics</image:title></image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/apps/doso/</loc>
@@ -31,6 +36,10 @@
       <image:loc>https://clevrapps.com/assets/apps/doso-800.webp</image:loc>
       <image:title>Doso medication and health tracker</image:title>
     </image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-2.webp</image:loc><image:title>Doso lab result analysis</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-3.webp</image:loc><image:title>Doso medication interaction warning</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-4.webp</image:loc><image:title>Doso voice medication entry</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-5.webp</image:loc><image:title>Doso family health profiles</image:title></image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/apps/solvee/</loc>
@@ -39,6 +48,9 @@
       <image:loc>https://clevrapps.com/assets/apps/solvee.webp</image:loc>
       <image:title>Solvee AI homework helper</image:title>
     </image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/solvee-2.webp</image:loc><image:title>Solvee step-by-step explanations</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/solvee-3.webp</image:loc><image:title>Solvee literature analysis</image:title></image:image>
+    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/solvee-4.webp</image:loc><image:title>Solvee AI tools</image:title></image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/privacy.html</loc>

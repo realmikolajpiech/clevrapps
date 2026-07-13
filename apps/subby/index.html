@@ -39,7 +39,11 @@
             "applicationCategory": "FinanceApplication",
             "operatingSystem": "iOS, Android",
             "image": "https://clevrapps.com/assets/apps/subby-800.webp",
-            "screenshot": "https://clevrapps.com/assets/apps/subby-800.webp",
+            "screenshot": [
+              "https://clevrapps.com/assets/apps/subby-800.webp",
+              "https://clevrapps.com/assets/apps/gallery/subby-2.webp",
+              "https://clevrapps.com/assets/apps/gallery/subby-3.webp"
+            ],
             "downloadUrl": "https://apps.apple.com/us/app/subby-subscription-manager/id6755717606",
             "author": { "@type": "Organization", "name": "Clevr Apps", "url": "https://clevrapps.com/" },
             "sameAs": [
@@ -62,7 +66,13 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header header-solid">
       <a class="brand" href="../../index.html" aria-label="Clevr Apps, home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Clevr Apps</span></a>
-      <a class="privacy-back" href="../../index.html#work">← All apps</a>
+      <nav class="app-page-nav" aria-label="Clevr Apps projects">
+        <a href="../trailo/index.html"><span>01</span>Trailo</a>
+        <a href="../subby/index.html" aria-current="page"><span>02</span>Subby</a>
+        <a href="../doso/index.html"><span>03</span>Doso</a>
+        <a href="../solvee/index.html"><span>04</span>Solvee</a>
+      </nav>
+      <a class="app-nav-home" href="../../index.html"><span>Home</span><i aria-hidden="true">↖</i></a>
     </header>
 
     <main id="main">
@@ -71,7 +81,6 @@
           <p class="kicker">Clevr App / 02</p>
           <div class="app-title-row">
             <img src="../../assets/apps/subby-icon-160.webp" width="160" height="160" alt="Subby app icon" />
-            <span class="project-status">Available now</span>
           </div>
           <h1>Subby</h1>
           <p class="app-detail-tagline">Your subscriptions, under control.</p>
@@ -82,14 +91,16 @@
             <a class="text-link" href="https://play.google.com/store/apps/details?id=com.justgoodapps.subby" target="_blank" rel="noreferrer">Google Play <span>↗</span></a>
           </div>
         </div>
+        <a class="app-scroll-cue" href="#app-story">Explore the app <span aria-hidden="true">↓</span></a>
         <div class="app-detail-visual">
           <div class="app-detail-device">
             <img src="../../assets/apps/subby-800.webp" width="800" height="1731" fetchpriority="high" decoding="async" alt="Subby dashboard showing monthly subscription spending and upcoming renewals" />
+            <span class="device-island" aria-hidden="true"></span>
           </div>
         </div>
       </section>
 
-      <section class="app-detail-content">
+      <section class="app-detail-content" id="app-story">
         <div class="app-detail-intro">
           <p class="kicker">What it does</p>
           <h2>Know what renews.<br />Before it renews.</h2>
@@ -102,6 +113,23 @@
         </ol>
       </section>
 
+      <section class="app-gallery-section" aria-labelledby="subby-gallery-title">
+        <div class="app-gallery-heading">
+          <p class="kicker">Inside the app</p>
+          <h2 id="subby-gallery-title">Every renewal.<br />One clear picture.</h2>
+        </div>
+        <div class="app-gallery-grid gallery-two">
+          <figure class="app-gallery-card">
+            <img src="../../assets/apps/gallery/subby-2.webp" width="800" height="1731" loading="lazy" decoding="async" alt="Subby subscription list with renewal dates and monthly totals" />
+            <figcaption>Subscriptions and renewals</figcaption>
+          </figure>
+          <figure class="app-gallery-card">
+            <img src="../../assets/apps/gallery/subby-3.webp" width="800" height="1731" loading="lazy" decoding="async" alt="Subby category spending chart and billing cycle analytics" />
+            <figcaption>Spending analytics</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="app-facts" aria-label="Subby project information">
         <div><span>Status</span><strong>Available now</strong></div>
         <div><span>Platforms</span><strong>iOS · Android</strong></div>
@@ -109,7 +137,7 @@
         <div><span>By</span><strong>Clevr Apps</strong></div>
       </section>
 
-      <nav class="next-project" aria-label="Next project"><span>Next app</span><a href="../doso/">Doso <i>→</i></a></nav>
+      <nav class="next-project" aria-label="Next project"><span>Next app</span><a href="../doso/index.html">Doso <i>→</i></a></nav>
     </main>
 
     <footer class="site-footer policy-footer">

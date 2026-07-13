@@ -40,7 +40,12 @@
             "operatingSystem": "iOS, Android",
             "creativeWorkStatus": "Acquired",
             "image": "https://clevrapps.com/assets/apps/solvee.webp",
-            "screenshot": "https://clevrapps.com/assets/apps/solvee.webp",
+            "screenshot": [
+              "https://clevrapps.com/assets/apps/solvee.webp",
+              "https://clevrapps.com/assets/apps/gallery/solvee-2.webp",
+              "https://clevrapps.com/assets/apps/gallery/solvee-3.webp",
+              "https://clevrapps.com/assets/apps/gallery/solvee-4.webp"
+            ],
             "author": { "@type": "Organization", "name": "Clevr Apps", "url": "https://clevrapps.com/" }
           },
           {
@@ -58,7 +63,13 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header header-solid">
       <a class="brand" href="../../index.html" aria-label="Clevr Apps, home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>Clevr Apps</span></a>
-      <a class="privacy-back" href="../../index.html#work">← All apps</a>
+      <nav class="app-page-nav" aria-label="Clevr Apps projects">
+        <a href="../trailo/index.html"><span>01</span>Trailo</a>
+        <a href="../subby/index.html"><span>02</span>Subby</a>
+        <a href="../doso/index.html"><span>03</span>Doso</a>
+        <a href="../solvee/index.html" aria-current="page"><span>04</span>Solvee</a>
+      </nav>
+      <a class="app-nav-home" href="../../index.html"><span>Home</span><i aria-hidden="true">↖</i></a>
     </header>
 
     <main id="main">
@@ -77,15 +88,17 @@
             <a class="button button-dark" href="../../index.html#contact">Acquisition enquiries <span>→</span></a>
           </div>
         </div>
+        <a class="app-scroll-cue" href="#app-story">Explore the app <span aria-hidden="true">↓</span></a>
         <div class="app-detail-visual">
           <div class="app-detail-device app-detail-device-solvee">
             <img src="../../assets/apps/solvee.webp" width="314" height="679" fetchpriority="high" decoding="async" alt="Solvee camera interface scanning a homework exercise" />
+            <span class="device-island" aria-hidden="true"></span>
           </div>
           <span class="app-acquired-stamp" aria-hidden="true">ACQUIRED</span>
         </div>
       </section>
 
-      <section class="app-detail-content">
+      <section class="app-detail-content" id="app-story">
         <div class="app-detail-intro">
           <p class="kicker">The product</p>
           <h2>Scan it.<br />Understand it.</h2>
@@ -98,6 +111,27 @@
         </ol>
       </section>
 
+      <section class="app-gallery-section" aria-labelledby="solvee-gallery-title">
+        <div class="app-gallery-heading">
+          <p class="kicker">Inside the app</p>
+          <h2 id="solvee-gallery-title">More than<br />a final answer.</h2>
+        </div>
+        <div class="app-gallery-grid">
+          <figure class="app-gallery-card">
+            <img src="../../assets/apps/gallery/solvee-2.webp" width="314" height="679" loading="lazy" decoding="async" alt="Solvee step-by-step mathematics explanation" />
+            <figcaption>Step-by-step explanations</figcaption>
+          </figure>
+          <figure class="app-gallery-card">
+            <img src="../../assets/apps/gallery/solvee-3.webp" width="314" height="679" loading="lazy" decoding="async" alt="Solvee literature analysis tool" />
+            <figcaption>Literature analysis</figcaption>
+          </figure>
+          <figure class="app-gallery-card">
+            <img src="../../assets/apps/gallery/solvee-4.webp" width="314" height="679" loading="lazy" decoding="async" alt="Solvee AI learning tools dashboard" />
+            <figcaption>Specialized AI tools</figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="app-facts" aria-label="Solvee project information">
         <div><span>Outcome</span><strong>Acquired</strong></div>
         <div><span>Downloads</span><strong>25,000+</strong></div>
@@ -105,7 +139,7 @@
         <div><span>Acquired</span><strong>February 2026</strong></div>
       </section>
 
-      <nav class="next-project" aria-label="Next project"><span>Back to the beginning</span><a href="../trailo/">Trailo <i>→</i></a></nav>
+      <nav class="next-project" aria-label="Next project"><span>Back to the beginning</span><a href="../trailo/index.html">Trailo <i>→</i></a></nav>
     </main>
 
     <footer class="site-footer policy-footer">
