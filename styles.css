@@ -2495,8 +2495,9 @@ textarea {
   }
 
   .project-copy { min-height: 560px; }
-  .project-visual { min-height: 690px; }
+  .project-visual { min-height: 560px; }
   .phone { width: min(56%, 390px); }
+  .project-solvee .phone { width: min(56%, 390px); }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(2) { border-right: 0; }
   .stat:nth-child(-n + 2) { border-bottom: 1px solid rgba(255, 255, 255, 0.14); }
@@ -2575,8 +2576,9 @@ textarea {
   .project-tagline { font-size: 1.75rem; }
   .project-topline { align-items: flex-start; }
   .project-status { max-width: 9rem; text-align: center; }
-  .project-visual { min-height: 570px; }
-  .phone { width: 67%; bottom: -11%; }
+  .project-visual { min-height: 520px; }
+  .phone { width: 67%; bottom: -5%; }
+  .project-solvee .phone { width: 67%; }
   .stats { grid-template-columns: 1fr 1fr; }
   .stat { padding-inline: 1.25rem; }
   .principles li { grid-template-columns: 2rem 1fr; }
