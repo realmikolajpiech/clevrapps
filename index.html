@@ -38,14 +38,6 @@
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
-    <link
-      rel="preload"
-      as="image"
-      type="image/webp"
-      href="assets/clevrapps-logo-640.webp"
-      imagesrcset="assets/clevrapps-logo-640.webp 640w, assets/clevrapps-logo-1024.webp 1024w"
-      imagesizes="(max-width: 820px) 88vw, 42vw"
-    />
     <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
@@ -202,25 +194,6 @@
           </div>
         </div>
 
-        <div class="hero-art reveal reveal-delay-2" data-tilt aria-label="Clevr Apps logo">
-          <div class="orbit orbit-one" aria-hidden="true"></div>
-          <div class="orbit orbit-two" aria-hidden="true"></div>
-          <div class="logo-card">
-            <img
-              src="assets/clevrapps-logo-640.webp"
-              srcset="assets/clevrapps-logo-640.webp 640w, assets/clevrapps-logo-1024.webp 1024w"
-              sizes="(max-width: 820px) 88vw, 42vw"
-              width="1024"
-              height="1024"
-              fetchpriority="high"
-              decoding="async"
-              alt="Clevr Apps abstract four-part logo"
-            />
-          </div>
-          <div class="hero-note hero-note-top" aria-hidden="true">EST. 2025</div>
-          <div class="hero-note hero-note-bottom" aria-hidden="true">IDEA → SHIPPED</div>
-        </div>
-
         <a class="scroll-cue" href="#work" aria-label="Scroll to selected work">
           <span>Selected work</span>
           <i aria-hidden="true"></i>
@@ -269,8 +242,21 @@
           <p>Consumer products built end-to-end—from the first rough idea to launch, iteration and growth.</p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card project-trailo reveal">
+        <div class="work-browser">
+          <nav class="work-rail" aria-label="Selected app navigator">
+            <p class="work-rail-count" aria-live="polite"><strong data-project-current>01</strong><span>/ 05</span></p>
+            <ol>
+              <li><a href="#project-trailo" data-project-link aria-current="step"><i></i><span><small>01</small>Trailo</span></a></li>
+              <li><a href="#project-subby" data-project-link><i></i><span><small>02</small>Subby</span></a></li>
+              <li><a href="#project-doso" data-project-link><i></i><span><small>03</small>Doso</span></a></li>
+              <li><a href="#project-solvee" data-project-link><i></i><span><small>04</small>Solvee</span></a></li>
+              <li><a href="#project-twojasiec" data-project-link><i></i><span><small>05</small>Twoja Sieć</span></a></li>
+            </ol>
+            <p class="work-rail-hint">Scroll or jump to an app</p>
+          </nav>
+
+          <div class="project-grid">
+          <article class="project-card project-trailo reveal" id="project-trailo" data-project>
             <div class="project-copy">
               <div class="project-topline">
                 <img src="assets/apps/trailo-icon-160.webp" width="160" height="160" decoding="async" alt="" />
@@ -317,7 +303,7 @@
             </div>
           </article>
 
-          <article class="project-card project-subby reveal">
+          <article class="project-card project-subby reveal" id="project-subby" data-project>
             <div class="project-copy">
               <div class="project-topline">
                 <img src="assets/apps/subby-icon-160.webp" width="160" height="160" decoding="async" alt="" />
@@ -363,7 +349,7 @@
             </div>
           </article>
 
-          <article class="project-card project-doso reveal">
+          <article class="project-card project-doso reveal" id="project-doso" data-project>
             <div class="project-copy">
               <div class="project-topline">
                 <img src="assets/apps/doso-icon-160.webp" width="160" height="160" decoding="async" alt="" />
@@ -406,7 +392,7 @@
             </div>
           </article>
 
-          <article class="project-card project-solvee reveal">
+          <article class="project-card project-solvee reveal" id="project-solvee" data-project>
             <div class="project-copy">
               <div class="project-topline">
                 <img src="assets/apps/solvee-icon-160.webp" width="160" height="160" decoding="async" alt="" />
@@ -443,7 +429,7 @@
             </div>
           </article>
 
-          <article class="project-card project-twojasiec reveal">
+          <article class="project-card project-twojasiec reveal" id="project-twojasiec" data-project>
             <div class="project-copy">
               <div class="project-topline">
                 <div class="twojasiec-wordmark" aria-label="Twoja Sieć">twoja sieć<span aria-hidden="true">•</span></div>
@@ -478,6 +464,7 @@
               </div>
             </div>
           </article>
+          </div>
         </div>
       </section>
 

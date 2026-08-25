@@ -234,22 +234,6 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
   revealItems.forEach((item) => revealObserver.observe(item));
 }
 
-const tiltArea = document.querySelector("[data-tilt]");
-const logoCard = tiltArea?.querySelector(".logo-card");
-
-if (tiltArea && logoCard && !reducedMotion && window.matchMedia("(pointer: fine)").matches) {
-  tiltArea.addEventListener("pointermove", (event) => {
-    const bounds = tiltArea.getBoundingClientRect();
-    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-    logoCard.style.transform = `rotate(2.5deg) rotateY(${x * 9}deg) rotateX(${-y * 9}deg) translate3d(${x * 8}px, ${y * 8}px, 0)`;
-  });
-
-  tiltArea.addEventListener("pointerleave", () => {
-    logoCard.style.transform = "rotate(2.5deg)";
-  });
-}
-
 const counters = document.querySelectorAll("[data-count]");
 
 if (counters.length && "IntersectionObserver" in window && !reducedMotion) {
@@ -306,6 +290,66 @@ if (parallaxItems.length && !reducedMotion && window.matchMedia("(min-width: 821
     },
     { passive: true },
   );
+}
+
+const workProjects = [...document.querySelectorAll("[data-project]")];
+const workProjectLinks = [...document.querySelectorAll("[data-project-link]")];
+const workProjectCurrent = document.querySelector("[data-project-current]");
+
+if (workProjects.length && workProjectLinks.length) {
+  let activeProjectId = "";
+  let projectNavTicking = false;
+
+  const setActiveProject = (project) => {
+    if (!project || project.id === activeProjectId) return;
+    activeProjectId = project.id;
+
+    workProjectLinks.forEach((link, index) => {
+      const isActive = link.hash === `#${project.id}`;
+      if (isActive) {
+        link.setAttribute("aria-current", "step");
+        if (workProjectCurrent) workProjectCurrent.textContent = String(index + 1).padStart(2, "0");
+        if (window.innerWidth <= 1050) {
+          link.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "nearest", inline: "center" });
+        }
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  };
+
+  const updateActiveProject = () => {
+    const focusLine = window.innerHeight * 0.42;
+    const closestProject = workProjects.reduce((closest, project) => {
+      const bounds = project.getBoundingClientRect();
+      const distance = bounds.top <= focusLine && bounds.bottom >= focusLine
+        ? 0
+        : Math.min(Math.abs(bounds.top - focusLine), Math.abs(bounds.bottom - focusLine));
+      return !closest || distance < closest.distance ? { project, distance } : closest;
+    }, null)?.project;
+
+    setActiveProject(closestProject);
+    projectNavTicking = false;
+  };
+
+  workProjectLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      const project = document.querySelector(link.hash);
+      setActiveProject(project);
+    });
+  });
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (projectNavTicking) return;
+      requestAnimationFrame(updateActiveProject);
+      projectNavTicking = true;
+    },
+    { passive: true },
+  );
+
+  updateActiveProject();
 }
 
 const projectNavigationLinks = document.querySelectorAll(".project-card a[href^='apps/']");
