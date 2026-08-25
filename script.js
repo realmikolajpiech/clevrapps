@@ -298,7 +298,6 @@ const workProjectCurrent = document.querySelector("[data-project-current]");
 
 if (workProjects.length && workProjectLinks.length) {
   let activeProjectId = "";
-  let projectNavTicking = false;
 
   const setActiveProject = (project) => {
     if (!project || project.id === activeProjectId) return;
@@ -320,16 +319,20 @@ if (workProjects.length && workProjectLinks.length) {
 
   const updateActiveProject = () => {
     const focusLine = window.innerHeight * 0.42;
-    const closestProject = workProjects.reduce((closest, project) => {
+    const visibleProject = workProjects.find((project) => {
       const bounds = project.getBoundingClientRect();
-      const distance = bounds.top <= focusLine && bounds.bottom >= focusLine
-        ? 0
-        : Math.min(Math.abs(bounds.top - focusLine), Math.abs(bounds.bottom - focusLine));
+      return bounds.top <= focusLine && bounds.bottom >= focusLine;
+    });
+
+    const closestProject = visibleProject || workProjects.reduce((closest, project) => {
+      const bounds = project.getBoundingClientRect();
+      const distance = bounds.bottom < focusLine
+        ? focusLine - bounds.bottom
+        : bounds.top - focusLine;
       return !closest || distance < closest.distance ? { project, distance } : closest;
     }, null)?.project;
 
     setActiveProject(closestProject);
-    projectNavTicking = false;
   };
 
   workProjectLinks.forEach((link) => {
@@ -339,15 +342,10 @@ if (workProjects.length && workProjectLinks.length) {
     });
   });
 
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (projectNavTicking) return;
-      requestAnimationFrame(updateActiveProject);
-      projectNavTicking = true;
-    },
-    { passive: true },
-  );
+  window.addEventListener("scroll", updateActiveProject, { passive: true });
+  window.addEventListener("resize", updateActiveProject, { passive: true });
+  window.addEventListener("hashchange", updateActiveProject);
+  window.addEventListener("load", updateActiveProject, { once: true });
 
   updateActiveProject();
 }
