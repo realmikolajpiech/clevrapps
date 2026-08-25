@@ -872,6 +872,54 @@ textarea {
   color: rgba(246, 243, 238, 0.5);
 }
 
+.project-twojasiec {
+  --card-bg: #dce9f2;
+}
+
+.twojasiec-wordmark {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.12em;
+  color: #171a1d;
+  font-size: clamp(1.15rem, 2vw, 1.7rem);
+  font-weight: 700;
+  letter-spacing: -0.08em;
+}
+
+.twojasiec-wordmark span {
+  color: #1686c7;
+  font-size: 0.65em;
+  line-height: 1;
+}
+
+.project-twojasiec .project-visual {
+  background: #bcd9ea;
+}
+
+.project-twojasiec .project-twojasiec-phone {
+  transform: rotate(4deg);
+}
+
+.project-twojasiec .platform-link {
+  color: #f7fbff;
+  background: #167ab2;
+  border-color: #167ab2;
+}
+
+.project-twojasiec .platform-link small {
+  color: rgba(247, 251, 255, 0.64);
+}
+
+.project-twojasiec .platform-link-quiet {
+  color: var(--ink);
+  background: transparent;
+  border-color: rgba(23, 26, 29, 0.28);
+}
+
+.project-twojasiec .platform-link-quiet small {
+  color: rgba(23, 26, 29, 0.48);
+}
+
 .project-visual {
   position: relative;
   min-height: 100%;
@@ -1853,6 +1901,19 @@ textarea {
   view-transition-name: project-icon;
 }
 
+.app-title-wordmark {
+  padding: 0.8rem 1rem;
+  color: #171a1d;
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid rgba(23, 26, 29, 0.08);
+  border-radius: 1.15rem;
+  box-shadow: 0 14px 34px rgba(23, 26, 29, 0.1);
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  view-transition-name: project-icon;
+}
+
 .app-detail-copy h1 {
   margin: 0;
   font-size: clamp(4.5rem, 10vw, 11rem);
@@ -2034,6 +2095,11 @@ textarea {
   color: white;
   background: radial-gradient(circle at 50% 50%, #284e39, #0d2117 68%);
 }
+
+.app-detail-twojasiec .app-detail-hero { background: #dce9f2; }
+.app-detail-twojasiec .app-detail-visual { background: #bcd9ea; }
+.app-detail-twojasiec .app-detail-device { transform: rotate(3deg); }
+.app-detail-twojasiec .app-gallery-section { background: #dce9f2; }
 
 .app-detail-device-solvee {
   transform: rotate(-2deg);
