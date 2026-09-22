@@ -65,24 +65,21 @@
 }
 .directory-app {
   display: grid;
-  grid-template-columns: 60px minmax(0, 1fr) 20px;
-  column-gap: 18px;
-  row-gap: 26px;
-  align-items: center;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 20px;
   padding: 30px;
   background: #f7f8f8;
   border-radius: 16px;
-  min-height: 192px;
+  min-height: 240px;
   color: var(--ink);
 }
-.directory-app:hover {
-  background: #eff1f1;
-  color: var(--ink);
+.directory-app-header {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
 }
-.directory-app:active {
-  transform: scale(0.995);
-}
-.directory-app > img {
+.directory-app-header > img {
   width: 60px;
   height: 60px;
   border-radius: 14px;
@@ -99,23 +96,50 @@
   color: #73787a;
   margin-top: 6px;
 }
-.directory-arrow {
-  font-size: 21px;
-  color: #929798;
-  align-self: start;
-  line-height: 1;
-  transition: transform 0.2s;
-}
-.directory-app:hover .directory-arrow {
-  transform: translate(2px, -2px);
-  color: var(--ink);
-}
 .directory-app > p {
-  grid-column: 1 / -1;
   font-size: 15px;
   color: #656b6d;
   line-height: 1.6;
   max-width: 35ch;
+}
+.directory-app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.directory-app-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid #dfe2e2;
+  border-radius: 8px;
+  background: #fff;
+  color: #45494b;
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 1;
+}
+.directory-app-actions a:hover {
+  border-color: #c9cdcd;
+  background: #eff1f1;
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+.directory-app-actions a:active {
+  transform: translateY(1px) scale(0.98);
+}
+.directory-app-actions span {
+  color: #8a8e8f;
+  transition: transform 0.2s var(--ease);
+}
+.directory-app-actions a:hover span {
+  transform: translate(1px, -1px);
+}
+.directory-app-actions a[href^="apps/"]:hover span {
+  transform: translateX(2px);
 }
 
 .directory-contact {
@@ -193,14 +217,16 @@
     gap: 12px;
   }
   .directory-app {
-    min-height: 170px;
+    min-height: 218px;
     padding: 25px;
-    grid-template-columns: 52px minmax(0, 1fr) 16px;
-    column-gap: 15px;
-    row-gap: 20px;
+    row-gap: 18px;
     border-radius: 14px;
   }
-  .directory-app > img {
+  .directory-app-header {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 15px;
+  }
+  .directory-app-header > img {
     width: 52px;
     height: 52px;
     border-radius: 12px;
@@ -214,6 +240,10 @@
   .directory-app > p {
     font-size: 14px;
     max-width: 34ch;
+  }
+  .directory-app-actions a {
+    min-height: 38px;
+    padding-inline: 13px;
   }
 
   .directory-contact {

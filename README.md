@@ -20,7 +20,7 @@ Upload the project root to any static host (Cloudflare Pages, Netlify, Vercel, G
 
 ## Brand and site roles
 
-See [BRAND.md](BRAND.md) for the identity, voice, and the relationship to mikolajpiech.com. The homepage is a compact app directory. Each entry links to product details and downloads. Email support is at the bottom of the page. The personal website retains its original portfolio style.
+See [BRAND.md](BRAND.md) for the identity, voice, and the relationship to mikolajpiech.com. The homepage is a compact app directory. Each entry links directly to its available website and store destinations. Detailed product pages remain available for search, support, and project history. Email support is at the bottom of the page. The personal website retains its original portfolio style.
 
 The site uses HTML, CSS, and a small script for the copyright year. Navigation, product links, and email work without JavaScript. No build is required. Google Fonts serves DM Sans and DM Mono.
 
