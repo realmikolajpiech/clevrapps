@@ -61,3 +61,7 @@ This is a local implementation and brand direction, not a deployment. Review pro
 ## Simpler directory layout
 
 The homepage gives each app one icon, name, platform line, short description, and a single clickable entry. Screenshots, feature explanations, and download choices live on product pages. There is no separate founder section, overlapping phone artwork, or repeated app call to action on the homepage.
+
+## Product pages
+
+Product pages use the same 1000px content width, DM Sans type, white background and soft gray surfaces as the homepage. Start with the app icon, name, platforms and direct download links. Follow with a short description, original screenshots, practical features and support. Screenshots scroll horizontally on narrow screens; galleries remain keyboard accessible. Keep acquired products clearly labeled.

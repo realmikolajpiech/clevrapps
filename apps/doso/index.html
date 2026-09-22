@@ -60,7 +60,7 @@
       type="image/webp"
       href="../../assets/apps/doso-800.webp"
     />
-    <link rel="stylesheet" href="../../styles.css?v=20260922-5" />
+    <link rel="stylesheet" href="../../styles.css?v=20260922-6" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -133,10 +133,11 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="../../product.css?v=20260922-1" />
   </head>
-  <body class="app-detail-page app-detail-doso">
+  <body class="product-page product-page-doso">
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header header-solid">
+    <header class="site-header">
       <a class="brand" href="../../index.html" aria-label="Clevr Apps, home"
         ><svg
           class="brand-icon"
@@ -157,45 +158,31 @@
           </g></svg
         ><span>clevr<span class="brand-apps">apps</span></span></a
       >
-      <nav class="app-page-nav" aria-label="Clevr Apps projects">
-        <a href="../trailo/index.html"><span>01</span>Trailo</a>
-        <a href="../subby/index.html"><span>02</span>Subby</a>
-        <a href="../doso/index.html" aria-current="page"><span>03</span>Doso</a>
-        <a href="../solvee/index.html"><span>04</span>Solvee</a>
-        <a href="../../twojasiec"><span>05</span>Twoja Sieć</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="../../#work">Apps</a><a href="#support">Contact</a>
       </nav>
-      <a class="app-nav-home" href="../../index.html"
-        ><span>Home</span><i aria-hidden="true">↖</i></a
-      >
     </header>
-
     <main id="main">
-      <section class="app-detail-hero">
-        <div class="app-detail-copy">
-          <p class="kicker">Clevr App / 03</p>
-          <div class="app-title-row">
+      <a class="product-back" href="../../#work"
+        ><span aria-hidden="true">←</span> All apps</a
+      >
+      <section class="product-overview" aria-labelledby="product-title">
+        <div class="product-heading">
+          <div class="product-identity">
             <img
               src="../../assets/apps/doso-icon-160.webp"
-              width="160"
-              height="160"
-              alt="Doso app icon"
+              width="64"
+              height="64"
+              alt=""
             />
+            <div>
+              <h1 id="product-title">Doso</h1>
+              <p>iOS</p>
+            </div>
           </div>
-          <h1>Doso</h1>
-          <p class="app-detail-tagline">
-            Medication schedules and health records.
-          </p>
-          <p class="app-detail-summary">
-            Doso keeps medications, lab results and daily symptoms together,
-            using AI to explain information in plain language and help you
-            arrive at appointments better prepared.
-          </p>
-          <div class="tags">
-            <span>Health</span><span>AI</span><span>iOS</span>
-          </div>
-          <div class="app-detail-actions">
+          <div class="product-actions">
             <a
-              class="button button-dark"
+              class="product-download"
               href="https://apps.apple.com/app/doso-pill-reminder-tracker/id6761341859"
               target="_blank"
               rel="noreferrer"
@@ -203,37 +190,80 @@
             >
           </div>
         </div>
-        <a class="app-scroll-cue" href="#app-story"
-          >Explore the app <span aria-hidden="true">↓</span></a
-        >
-        <div class="app-detail-visual">
-          <div class="app-detail-device">
-            <img
-              src="../../assets/apps/doso-800.webp"
-              width="800"
-              height="1731"
-              fetchpriority="high"
-              decoding="async"
-              alt="Doso dashboard with medication schedule and health actions"
-            />
-            <span class="device-island" aria-hidden="true"></span>
-          </div>
-        </div>
-      </section>
-
-      <section class="app-detail-content" id="app-story">
-        <div class="app-detail-intro">
-          <p class="kicker">What it does</p>
-          <h2>What you can keep track of</h2>
-          <p>
-            Health information is often fragmented across reminders, PDFs, notes
-            and memory. Doso makes the day-to-day picture easier to track and
-            easier to discuss with a professional.
+        <div class="product-description">
+          <p class="product-tagline">Keep your health details together.</p>
+          <p class="product-summary">
+            Manage medication schedules, save lab results and log symptoms. Keep
+            a useful record of your day-to-day health for your next appointment.
           </p>
         </div>
-        <ol class="feature-list">
+      </section>
+      <section class="product-gallery" aria-label="Screenshots" tabindex="0">
+        <figure>
+          <img
+            src="../../assets/apps/doso-800.webp"
+            width="800"
+            height="1731"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+            alt="Doso dashboard with medication schedule and health actions"
+          />
+          <figcaption>Medication schedule</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../../assets/apps/gallery/doso-2.webp"
+            width="800"
+            height="1731"
+            loading="lazy"
+            decoding="async"
+            alt="Doso AI explanation of blood test results"
+          />
+          <figcaption>Lab result explanations</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../../assets/apps/gallery/doso-3.webp"
+            width="800"
+            height="1731"
+            loading="lazy"
+            decoding="async"
+            alt="Doso medication interaction warning"
+          />
+          <figcaption>Interaction warnings</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../../assets/apps/gallery/doso-4.webp"
+            width="800"
+            height="1731"
+            loading="lazy"
+            decoding="async"
+            alt="Doso voice input for adding medications"
+          />
+          <figcaption>Voice-first setup</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="../../assets/apps/gallery/doso-5.webp"
+            width="800"
+            height="1731"
+            loading="lazy"
+            decoding="async"
+            alt="Doso family health profile management"
+          />
+          <figcaption>Family profiles</figcaption>
+        </figure>
+      </section>
+      <section
+        class="product-features"
+        id="app-story"
+        aria-labelledby="features-title"
+      >
+        <h2 id="features-title">What you can do</h2>
+        <ul>
           <li>
-            <span>01</span>
             <div>
               <h3>Medication schedules</h3>
               <p>
@@ -243,7 +273,6 @@
             </div>
           </li>
           <li>
-            <span>02</span>
             <div>
               <h3>Lab results in plain language</h3>
               <p>
@@ -253,7 +282,6 @@
             </div>
           </li>
           <li>
-            <span>03</span>
             <div>
               <h3>Symptom history</h3>
               <p>
@@ -262,117 +290,33 @@
               </p>
             </div>
           </li>
-        </ol>
+        </ul>
       </section>
-
-      <section class="app-gallery-section" aria-labelledby="doso-gallery-title">
-        <div class="app-gallery-heading">
-          <p class="kicker">Inside the app</p>
-          <h2 id="doso-gallery-title">A look inside Doso</h2>
-        </div>
-        <div class="app-gallery-grid gallery-four">
-          <figure class="app-gallery-card">
-            <img
-              src="../../assets/apps/gallery/doso-2.webp"
-              width="800"
-              height="1731"
-              loading="lazy"
-              decoding="async"
-              alt="Doso AI explanation of blood test results"
-            />
-            <figcaption>Lab result explanations</figcaption>
-          </figure>
-          <figure class="app-gallery-card">
-            <img
-              src="../../assets/apps/gallery/doso-3.webp"
-              width="800"
-              height="1731"
-              loading="lazy"
-              decoding="async"
-              alt="Doso medication interaction warning"
-            />
-            <figcaption>Interaction warnings</figcaption>
-          </figure>
-          <figure class="app-gallery-card">
-            <img
-              src="../../assets/apps/gallery/doso-4.webp"
-              width="800"
-              height="1731"
-              loading="lazy"
-              decoding="async"
-              alt="Doso voice input for adding medications"
-            />
-            <figcaption>Voice-first setup</figcaption>
-          </figure>
-          <figure class="app-gallery-card">
-            <img
-              src="../../assets/apps/gallery/doso-5.webp"
-              width="800"
-              height="1731"
-              loading="lazy"
-              decoding="async"
-              alt="Doso family health profile management"
-            />
-            <figcaption>Family profiles</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <aside class="health-note">
+      <aside class="product-note">
         <strong>Important:</strong> Doso does not replace professional medical
         advice. Always consult a qualified healthcare professional about your
         health and treatment.
       </aside>
-
-      <section class="app-facts" aria-label="Doso project information">
-        <div><span>Status</span><strong>Available now</strong></div>
-        <div><span>Platform</span><strong>iOS</strong></div>
-        <div><span>Category</span><strong>Health · AI</strong></div>
+      <section
+        class="product-support"
+        id="support"
+        aria-labelledby="support-title"
+      >
         <div>
-          <span>By</span
-          ><strong><a href="../../index.html">Clevr Apps</a></strong>
+          <h2 id="support-title">Questions about Doso?</h2>
+          <p>For support, feedback or anything else.</p>
         </div>
-      </section>
-
-      <p class="text-link">
-        <a href="../../#contact">Questions about this app? Get in touch ↗</a>
-      </p>
-      <nav class="next-project" aria-label="Next project">
-        <span>Next app</span><a href="../solvee/index.html">Solvee <i>→</i></a>
-      </nav>
-    </main>
-
-    <footer class="site-footer policy-footer">
-      <div class="footer-brand">
-        <svg
-          class="brand-icon"
-          width="34"
-          height="34"
-          viewBox="0 0 80 80"
-          aria-hidden="true"
-          focusable="false"
-          xmlns="http://www.w3.org/2000/svg"
+        <a href="mailto:mikolaj@clevrapps.com"
+          >mikolaj@clevrapps.com <span aria-hidden="true">↗</span></a
         >
-          <rect width="80" height="80" rx="21" fill="#242526" />
-          <g transform="translate(8 8)">
-            <path
-              fill="#ffffff"
-              transform="translate(6.637 52.985) scale(0.08461538461538462 -0.08461538461538462)"
-              d="M308 -12Q232.5 -12 173.86363636363637 21.32262569832402Q115.22727272727273 54.64525139664804 82.11363636363637 113.18156424581005Q49 171.71787709497207 49 247.6368715083799Q49 324.5 82.11363636363637 382.796875Q115.22727272727273 441.09375 173.86363636363637 474.546875Q232.5 508 308.23674911660777 508Q403.2826855123675 508 468.14134275618375 458.5Q533 409 550.5 322.5H416Q407 358.5 377.3484848484849 378.75Q347.6969696969697 399 307 399Q271.5 399 242.5 381.25Q213.5 363.5 196.25 329.6528662420382Q179 295.80573248407643 179 248Q179 212.43700787401576 189.0 184.46850393700788Q199 156.5 216.5 136.75Q234 117 257.25 106.75Q280.5 96.5 307 96.5Q334.20588235294116 96.5 356.30514705882354 105.47260273972603Q378.40441176470586 114.44520547945206 394.2022058823529 131.72260273972603Q410 149 416 173.5H550.5Q533 89.07062146892656 468.0 38.53531073446328Q403 -12 308 -12Z"
-            />
-          </g>
-        </svg>
-        <strong>clevr<span class="brand-apps">apps</span></strong>
+      </section>
+    </main>
+    <footer class="product-footer">
+      <p>© <span data-year></span> Clevr Apps</p>
+      <div>
+        <a href="https://mikolajpiech.com/">About Mikołaj</a
+        ><a href="../../privacy.html">Privacy</a>
       </div>
-      <p>Independent apps by Mikołaj Piech.</p>
-      <div class="footer-links">
-        <a href="../../index.html">Home</a
-        ><a href="https://mikolajpiech.com/" target="_blank" rel="noreferrer"
-          >Mikołaj Piech</a
-        ><a href="../../privacy.html">Privacy</a
-        ><a href="../../index.html#contact">Contact</a>
-      </div>
-      <p class="copyright">© <span data-year></span> Clevr Apps.</p>
     </footer>
     <script src="../../script.js?v=20260922"></script>
   </body>

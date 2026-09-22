@@ -60,7 +60,7 @@
       type="image/jpeg"
       href="../assets/apps/twojasiec/screenshot.jpeg"
     />
-    <link rel="stylesheet" href="../styles.css?v=20260922-5" />
+    <link rel="stylesheet" href="../styles.css?v=20260922-6" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -71,8 +71,8 @@
             "url": "https://clevrapps.com/twojasiec",
             "description": "Wiadomości, alerty i wydarzenia z Twojej okolicy w jednym miejscu.",
             "applicationCategory": "NewsApplication",
-            "operatingSystem": "Mobile",
-            "creativeWorkStatus": "InDevelopment",
+            "operatingSystem": "iOS, Android",
+            "creativeWorkStatus": "Published",
             "image": "https://clevrapps.com/assets/apps/twojasiec/screenshot.jpeg",
             "screenshot": "https://clevrapps.com/assets/apps/twojasiec/screenshot.jpeg",
             "author": {
@@ -126,10 +126,11 @@
         ]
       }
     </script>
+    <link rel="stylesheet" href="../product.css?v=20260922-1" />
   </head>
-  <body class="app-detail-page app-detail-twojasiec">
+  <body class="product-page product-page-twojasiec">
     <a class="skip-link" href="#main">Przejdź do treści</a>
-    <header class="site-header header-solid">
+    <header class="site-header">
       <a
         class="brand"
         href="../index.html"
@@ -154,81 +155,71 @@
         </svg>
         <span>clevr<span class="brand-apps">apps</span></span>
       </a>
-      <nav class="app-page-nav" aria-label="Aplikacje Clevr Apps">
-        <a href="../apps/trailo"><span>01</span>Trailo</a>
-        <a href="../apps/subby"><span>02</span>Subby</a>
-        <a href="../apps/doso"><span>03</span>Doso</a>
-        <a href="../apps/solvee"><span>04</span>Solvee</a>
-        <a href="/twojasiec" aria-current="page"><span>05</span>Twoja Sieć</a>
+      <nav class="site-nav" aria-label="Nawigacja główna">
+        <a href="../#work">Aplikacje</a><a href="#support">Kontakt</a>
       </nav>
-      <a class="app-nav-home" href="../index.html"
-        ><span>Home</span><i aria-hidden="true">↖</i></a
-      >
     </header>
-
     <main id="main">
-      <section class="app-detail-hero">
-        <div class="app-detail-copy">
-          <p class="kicker">Clevr App / 05</p>
-          <div class="app-title-row">
-            <div class="app-title-wordmark">
-              twoja sieć<span aria-hidden="true">•</span>
+      <a class="product-back" href="../#work"
+        ><span aria-hidden="true">←</span> Wszystkie aplikacje</a
+      >
+      <section class="product-overview" aria-labelledby="product-title">
+        <div class="product-heading">
+          <div class="product-identity">
+            <img
+              src="../assets/apps/twojasiec-icon-160.webp"
+              width="64"
+              height="64"
+              alt=""
+            />
+            <div>
+              <h1 id="product-title">Twoja Sieć</h1>
+              <p>iOS &amp; Android</p>
             </div>
           </div>
-          <h1>Twoja Sieć</h1>
-          <p class="app-detail-tagline">Wiadomości blisko Ciebie.</p>
-          <p class="app-detail-summary">
-            Wiadomości, alerty i wydarzenia z Twojej okolicy w jednym miejscu.
-            Twoja Sieć porządkuje lokalne informacje, żeby łatwiej było
-            wiedzieć, co dzieje się obok.
-          </p>
-          <div class="tags">
-            <span>Lokalne informacje</span><span>Mobile</span
-            ><span>W budowie</span>
-          </div>
-          <div class="app-detail-actions app-detail-actions-wrap">
-            <a class="button button-dark" href="#app-story"
-              >Poznaj aplikację <span>↓</span></a
-            >
-            <a class="text-link" href="/twojasiec/privacy-policy"
-              >Polityka prywatności <span>↗</span></a
-            >
-            <a class="text-link" href="mailto:mikolaj@clevrapps.com"
-              >mikolaj@clevrapps.com <span>↗</span></a
+          <div class="product-actions">
+            <a class="product-download" href="https://twojasiec.app/"
+              >Otwórz stronę <span aria-hidden="true">↗</span></a
             >
           </div>
         </div>
-        <a class="app-scroll-cue" href="#app-story"
-          >Zobacz więcej <span aria-hidden="true">↓</span></a
-        >
-        <div class="app-detail-visual">
-          <div class="app-detail-device">
-            <img
-              src="../assets/apps/twojasiec/screenshot.jpeg"
-              width="589"
-              height="1280"
-              fetchpriority="high"
-              decoding="async"
-              alt="Ekran główny aplikacji Twoja Sieć z lokalnymi wiadomościami"
-            />
-            <span class="device-island" aria-hidden="true"></span>
+        <div class="product-intro-split">
+          <div class="product-description">
+            <p class="product-tagline">Wiadomości blisko Ciebie.</p>
+            <p class="product-summary">
+              Wiadomości, alerty i wydarzenia z Twojej okolicy w jednym miejscu.
+              Wybierz miejscowość i tematy, które Cię interesują.
+            </p>
           </div>
+          <section
+            class="product-gallery"
+            aria-label="Zrzuty ekranu"
+            tabindex="0"
+          >
+            <figure>
+              <img
+                src="../assets/apps/twojasiec/screenshot.jpeg"
+                width="589"
+                height="1280"
+                fetchpriority="high"
+                loading="eager"
+                decoding="async"
+                alt="Ekran główny aplikacji Twoja Sieć z lokalnymi wiadomościami"
+              />
+              <figcaption>Wiadomości z Twojej okolicy</figcaption>
+            </figure>
+          </section>
         </div>
       </section>
 
-      <section class="app-detail-content" id="app-story">
-        <div class="app-detail-intro">
-          <p class="kicker">Co robi aplikacja</p>
-          <h2>Lokalność<br />bez szumu.</h2>
-          <p>
-            Wybierz swoją okolicę, ustaw interesujące Cię tematy i dostawaj
-            lokalne informacje w uporządkowanej formie — bez przeglądania wielu
-            stron i przypadkowych grup.
-          </p>
-        </div>
-        <ol class="feature-list">
+      <section
+        class="product-features"
+        id="app-story"
+        aria-labelledby="features-title"
+      >
+        <h2 id="features-title">Co możesz zrobić</h2>
+        <ul>
           <li>
-            <span>01</span>
             <div>
               <h3>Wybierz swoją okolicę</h3>
               <p>
@@ -239,7 +230,6 @@
             </div>
           </li>
           <li>
-            <span>02</span>
             <div>
               <h3>Wszystko, co ważne lokalnie</h3>
               <p>
@@ -250,7 +240,6 @@
             </div>
           </li>
           <li>
-            <span>03</span>
             <div>
               <h3>Feed dopasowany do Ciebie</h3>
               <p>
@@ -262,7 +251,6 @@
             </div>
           </li>
           <li>
-            <span>04</span>
             <div>
               <h3>Wygodne korzystanie</h3>
               <p>
@@ -272,56 +260,31 @@
               </p>
             </div>
           </li>
-        </ol>
+        </ul>
       </section>
 
-      <section class="app-facts" aria-label="Informacje o projekcie Twoja Sieć">
-        <div><span>Status</span><strong>W budowie</strong></div>
-        <div><span>Platforma</span><strong>Aplikacja mobilna</strong></div>
-        <div><span>Kategoria</span><strong>Lokalne informacje</strong></div>
+      <section
+        class="product-support"
+        id="support"
+        aria-labelledby="support-title"
+      >
         <div>
-          <span>Twórca</span
-          ><strong><a href="../index.html">Clevr Apps</a></strong>
+          <h2 id="support-title">Masz pytanie?</h2>
+          <p>
+            Napisz, jeśli potrzebujesz pomocy lub chcesz podzielić się opinią.
+          </p>
         </div>
-      </section>
-
-      <nav class="next-project" aria-label="Następna aplikacja">
-        <span>Wróć do wszystkich aplikacji</span
-        ><a href="../index.html#work">Clevr Apps <i>→</i></a>
-      </nav>
-    </main>
-
-    <footer class="site-footer policy-footer">
-      <div class="footer-brand">
-        <svg
-          class="brand-icon"
-          width="34"
-          height="34"
-          viewBox="0 0 80 80"
-          aria-hidden="true"
-          focusable="false"
-          xmlns="http://www.w3.org/2000/svg"
+        <a href="mailto:mikolaj@clevrapps.com"
+          >mikolaj@clevrapps.com <span aria-hidden="true">↗</span></a
         >
-          <rect width="80" height="80" rx="21" fill="#242526" />
-          <g transform="translate(8 8)">
-            <path
-              fill="#ffffff"
-              transform="translate(6.637 52.985) scale(0.08461538461538462 -0.08461538461538462)"
-              d="M308 -12Q232.5 -12 173.86363636363637 21.32262569832402Q115.22727272727273 54.64525139664804 82.11363636363637 113.18156424581005Q49 171.71787709497207 49 247.6368715083799Q49 324.5 82.11363636363637 382.796875Q115.22727272727273 441.09375 173.86363636363637 474.546875Q232.5 508 308.23674911660777 508Q403.2826855123675 508 468.14134275618375 458.5Q533 409 550.5 322.5H416Q407 358.5 377.3484848484849 378.75Q347.6969696969697 399 307 399Q271.5 399 242.5 381.25Q213.5 363.5 196.25 329.6528662420382Q179 295.80573248407643 179 248Q179 212.43700787401576 189.0 184.46850393700788Q199 156.5 216.5 136.75Q234 117 257.25 106.75Q280.5 96.5 307 96.5Q334.20588235294116 96.5 356.30514705882354 105.47260273972603Q378.40441176470586 114.44520547945206 394.2022058823529 131.72260273972603Q410 149 416 173.5H550.5Q533 89.07062146892656 468.0 38.53531073446328Q403 -12 308 -12Z"
-            />
-          </g>
-        </svg>
-        <strong>clevr<span class="brand-apps">apps</span></strong>
+      </section>
+    </main>
+    <footer class="product-footer">
+      <p>© <span data-year></span> Clevr Apps</p>
+      <div>
+        <a href="https://mikolajpiech.com/pl">O Mikołaju</a
+        ><a href="../twojasiec/privacy-policy/">Polityka prywatności</a>
       </div>
-      <p>Independent apps by Mikołaj Piech.</p>
-      <div class="footer-links">
-        <a href="../index.html">Home</a
-        ><a href="https://mikolajpiech.com/pl" target="_blank" rel="noreferrer"
-          >Mikołaj Piech</a
-        ><a href="/twojasiec/privacy-policy">Polityka prywatności</a
-        ><a href="/twojasiec/kontakt">Kontakt</a>
-      </div>
-      <p class="copyright">© <span data-year></span> Clevr Apps.</p>
     </footer>
     <script src="../script.js?v=20260922"></script>
   </body>
