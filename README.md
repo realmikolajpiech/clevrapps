@@ -1,6 +1,8 @@
 # Clevr Apps website
 
-A responsive, dependency-free static website for Clevr Apps with dedicated app pages, structured data, social metadata, responsive images, and crawl configuration.
+A responsive, dependency-free static website for Clevr Apps with dedicated app pages, structured data, social metadata, responsive images, crawl configuration, and an AI-readable site map in `llms.txt`.
+
+The Organization and SoftwareApplication structured data use `https://clevrapps.com/#organization` for the studio and `https://mikolajpiech.com/#person` for founder Mikołaj Piech. Keep those identifiers consistent with the personal website when updating either site.
 
 ## Preview locally
 
@@ -16,9 +18,17 @@ Then open `http://localhost:8000`.
 
 Upload the project root to any static host (Cloudflare Pages, Netlify, Vercel, GitHub Pages, or a standard web server). No build command is required.
 
-## Contact form activation
+## Brand and site roles
 
-The contact form submits through FormSubmit without opening the visitor&rsquo;s email client. After the site is live, send one test message and confirm the activation email delivered to `mikolaj@clevrapps.com`. Messages will not be forwarded until that one-time confirmation is completed.
+See [BRAND.md](BRAND.md) for the identity, voice, and the relationship to mikolajpiech.com. The homepage is a compact app directory. Each entry links to product details and downloads. Email support is at the bottom of the page. The personal website retains its original portfolio style.
+
+The site uses HTML, CSS, and a small script for the copyright year. Navigation, product links, and email work without JavaScript. No build is required. Google Fonts serves DM Sans and DM Mono.
+
+## Support
+
+Support and general enquiries go to `mikolaj@clevrapps.com` through a mailto link. There is no form provider to activate.
+
+## Domain configuration
 
 Set `https://clevrapps.com` as the primary domain and redirect these variants to it with permanent `301` redirects:
 

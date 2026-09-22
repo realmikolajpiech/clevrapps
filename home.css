@@ -1,0 +1,244 @@
+/* The homepage is an app directory. Product detail lives one level deeper. */
+.studio-home {
+  background: #fff;
+  --paper: #fff;
+  --ink: #242526;
+  --muted: #727577;
+  --line: #ebeded;
+}
+.studio-home main,
+.studio-home .site-header,
+.directory-footer {
+  width: min(1000px, calc(100% - 96px));
+  margin-inline: auto;
+}
+.studio-home .site-header {
+  min-height: 100px;
+  border: 0;
+}
+.studio-home .brand {
+  font-size: 24px;
+  gap: 10px;
+}
+.studio-home .site-nav {
+  gap: 32px;
+  font-size: 13px;
+  color: #5b5f61;
+}
+.studio-home .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.directory-intro {
+  padding: 64px 0 58px;
+}
+.directory-intro h1 {
+  font-size: clamp(44px, 5vw, 64px);
+  line-height: 1.1;
+  letter-spacing: -2.8px;
+  font-weight: 500;
+}
+.directory-intro h1 a {
+  color: #8a8e8f;
+}
+.directory-intro h1 a:hover {
+  color: var(--ink);
+}
+.directory-intro h1 a span {
+  display: inline-block;
+  font-size: 0.46em;
+  vertical-align: 0.2em;
+  margin-left: 16px;
+  font-weight: 400;
+}
+.directory-intro > p {
+  margin-top: 25px;
+  color: #686d6f;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.directory-app {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) 20px;
+  column-gap: 18px;
+  row-gap: 26px;
+  align-items: center;
+  padding: 30px;
+  background: #f7f8f8;
+  border-radius: 16px;
+  min-height: 192px;
+  color: var(--ink);
+}
+.directory-app:hover {
+  background: #eff1f1;
+  color: var(--ink);
+}
+.directory-app:active {
+  transform: scale(0.995);
+}
+.directory-app > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+}
+.directory-app h3 {
+  font-size: 23px;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  font-weight: 550;
+}
+.directory-app-title > span {
+  display: block;
+  font-size: 12px;
+  color: #73787a;
+  margin-top: 6px;
+}
+.directory-arrow {
+  font-size: 21px;
+  color: #929798;
+  align-self: start;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+.directory-app:hover .directory-arrow {
+  transform: translate(2px, -2px);
+  color: var(--ink);
+}
+.directory-app > p {
+  grid-column: 1 / -1;
+  font-size: 15px;
+  color: #656b6d;
+  line-height: 1.6;
+  max-width: 35ch;
+}
+
+.directory-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 56px 0;
+}
+.directory-contact h2 {
+  font-size: 19px;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+}
+.directory-contact p {
+  margin-top: 7px;
+  color: #787d7e;
+  font-size: 13px;
+}
+.directory-contact > a {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.directory-contact > a span {
+  margin-left: 18px;
+  color: #8a8e8f;
+}
+.directory-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0 30px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  color: #787d7e;
+}
+.directory-footer > div {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+@media (max-width: 767px) {
+  .studio-home main,
+  .studio-home .site-header,
+  .directory-footer {
+    width: calc(100% - 40px);
+  }
+  .studio-home .site-header {
+    min-height: 82px;
+  }
+  .studio-home .brand {
+    font-size: 22px;
+  }
+  .studio-home .site-nav {
+    gap: 22px;
+    font-size: 12px;
+  }
+  .directory-intro {
+    padding: 36px 0 36px;
+  }
+  .directory-intro h1 {
+    font-size: clamp(40px, 8vw, 58px);
+    letter-spacing: -1.8px;
+  }
+  .directory-intro h1 a span {
+    margin-left: 12px;
+  }
+  .directory-intro > p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .directory-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .directory-app {
+    min-height: 170px;
+    padding: 25px;
+    grid-template-columns: 52px minmax(0, 1fr) 16px;
+    column-gap: 15px;
+    row-gap: 20px;
+    border-radius: 14px;
+  }
+  .directory-app > img {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+  }
+  .directory-app h3 {
+    font-size: 21px;
+  }
+  .directory-app-title > span {
+    font-size: 11px;
+  }
+  .directory-app > p {
+    font-size: 14px;
+    max-width: 34ch;
+  }
+
+  .directory-contact {
+    display: block;
+    padding: 38px 0;
+  }
+  .directory-contact > a {
+    display: inline-flex;
+    margin-top: 19px;
+    font-size: 16px;
+  }
+  .directory-contact h2 {
+    font-size: 18px;
+  }
+  .directory-footer {
+    font-size: 10px;
+    gap: 15px;
+    padding-bottom: 24px;
+  }
+  .directory-footer > div {
+    gap: 16px;
+  }
+}
+
+.studio-home .brand-icon {
+  width: 32px;
+  height: 32px;
+}
