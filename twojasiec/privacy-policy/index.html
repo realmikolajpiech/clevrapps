@@ -63,7 +63,7 @@
         "isPartOf": { "@id": "https://clevrapps.com/#website" },
         "about": { "@type": "SoftwareApplication", "name": "Twoja Sieć" },
         "inLanguage": "pl",
-        "dateModified": "2026-08-25"
+        "dateModified": "2026-10-17"
       }
     </script>
   </head>
@@ -104,7 +104,7 @@
         <p class="kicker">Twoja Sieć / Prywatność</p>
         <h1>Polityka prywatności</h1>
         <div class="policy-meta">
-          <p>Ostatnia aktualizacja: 25 sierpnia 2026</p>
+          <p>Ostatnia aktualizacja: 17 października 2026</p>
           <p>Dotyczy aplikacji mobilnej Twoja Sieć i powiązanych usług.</p>
         </div>
       </header>
@@ -133,6 +133,7 @@
               organizacyjne.
             </li>
           </ul>
+          <p>Clevr Apps jest marką używaną przez Mikołaja Piecha, a nie odrębną spółką ani odrębnym administratorem danych. Mikołaj Piech prowadzi swoją część usługi jako osoba fizyczna z Polski.</p>
           <p>
             W zakresie, w jakim wspólnie ustalają cele i sposoby przetwarzania
             danych związanych z Aplikacją, działają jako współadministratorzy.
@@ -190,7 +191,7 @@
           <h2><span>03</span> Jakie dane przetwarzamy</h2>
           <p>Zakres danych zależy od sposobu korzystania z Aplikacji.</p>
 
-          <h3>3.1. Dane przechowywane wyłącznie na urządzeniu</h3>
+          <h3>3.1. Dane i ustawienia zapisywane na urządzeniu</h3>
           <ul>
             <li>wybrane miejscowości, promień i tematy;</li>
             <li>ustawienia wyglądu i powiadomień;</li>
@@ -202,12 +203,7 @@
             <li>historia wyszukiwania w Aplikacji;</li>
             <li>robocza wersja niewysłanego zgłoszenia wydarzenia.</li>
           </ul>
-          <p>
-            Dane te nie są przesyłane na nasze serwery, chyba że użytkownik
-            uruchomi funkcję, która tego wymaga, np. powiadomienia lub wysłanie
-            wydarzenia do moderacji. Dane lokalne można usunąć w Aplikacji,
-            przez wyczyszczenie jej danych albo odinstalowanie.
-          </p>
+          <p>Historia czytania i wyszukiwania oraz roboczy formularz pozostają na urządzeniu; wysłanie wydarzenia przekazuje treść zgłoszenia do moderacji. Wybrane miejscowości i ustawienia powiadomień trafiają na serwer przy korzystaniu z powiadomień, a wybrana miejscowość oraz pojedyncze zdarzenia korzystania są również przetwarzane w statystykach opisanych w sekcji 3.9. Nie oznacza to przesyłania całej lokalnej historii czytania lub wyszukiwania. Dane lokalne można usunąć przez dostępne funkcje Aplikacji, wyczyszczenie jej danych albo odinstalowanie.</p>
 
           <h3>3.2. Lokalizacja i wybrane obszary</h3>
           <p>
@@ -344,6 +340,13 @@
             problemów i utrzymania dostępności usługi, a nie do tworzenia
             profilu reklamowego w innych usługach.
           </p>
+
+          <h3>3.9. Statystyki korzystania z Aplikacji i jej treści</h3>
+          <p>Poza pomiarem reklam przetwarzamy zdarzenia otwarcia Aplikacji, rozpoczęcia i ukończenia wprowadzenia oraz wyboru miejscowości. Obejmują one losowy identyfikator instalacji, platformę, wybraną miejscowość i informację o dostępności usługi. W bazie zapisujemy skrót identyfikatora, daty pierwszej i ostatniej aktywności, dni korzystania oraz etapy wprowadzenia. Dane pozwalają ustalić, w których miejscowościach usługa jest używana i gdzie użytkownicy rezygnują z konfiguracji.</p>
+          <p>Statystyki treści obejmują identyfikator materiału, rodzaj działania — wyświetlenie, otwarcie, przejście do źródła, zapisanie, wybór biletu lub kalendarza — miejsce wyświetlenia w Aplikacji, platformę, czas zdarzenia oraz losowy identyfikator sesji i zdarzenia. Kolejka niewysłanych zdarzeń może być przechowywana lokalnie do próby wysłania. Podobny pomiar odwiedzin i oglądanej miejscowości jest używany na stronie internetowej Twojej Sieci, z identyfikatorem przeglądarki.</p>
+          <p>Statystyki są przetwarzane w Supabase i prezentowane uprawnionym administratorom jako raporty. Nie zawierają dokładnych współrzędnych urządzenia ani danych logowania do konta. Skrót identyfikatora i losowy identyfikator sesji nie oznaczają, że rekordy są automatycznie anonimowe. Ten pomiar nie polega na śledzeniu użytkownika pomiędzy niezależnymi usługami.</p>
+          <h3>3.10. Subskrypcje i uprawnienia do płatnych funkcji</h3>
+          <p>Przy korzystaniu z subskrypcji lub innych płatnych funkcji przetwarzamy identyfikator zakupu lub klienta, wybrany produkt, status płatności, okres dostępu, odnowienie, anulowanie lub zwrot oraz powiązanie z właściwym kontem albo uprawnieniem. Szczegółowe dane płatnicze obsługuje dostawca wskazany podczas zakupu. Płatności za kampanie reklamowe opisane powyżej obsługuje Stripe.</p>
         </section>
 
         <section>
@@ -414,11 +417,16 @@
                     Pomiar, ograniczanie częstotliwości i rozliczanie kampanii
                   </td>
                   <td>
-                    wykonanie umowy z reklamodawcą — art. 6 ust. 1 lit. b RODO;
-                    prawnie uzasadniony interes — art. 6 ust. 1 lit. f RODO;
-                    jeżeli odrębne przepisy wymagają zgody na zapis lub odczyt
-                    informacji z urządzenia — także zgoda
+                    Dla danych reklamodawcy niezbędnych do jego umowy — art. 6 ust. 1 lit. b RODO. Dla ograniczonego pomiaru po stronie odbiorców i zapobiegania wielokrotnemu naliczaniu — art. 6 ust. 1 lit. f RODO: interes rzetelnego rozliczania i ochrony przed nadużyciami, z uwzględnieniem praw odbiorców. Umowa z reklamodawcą nie jest podstawą umowną przetwarzania danych czytelnika.
                   </td>
+                </tr>
+                <tr>
+                  <td>Statystyki użycia, etapów wprowadzenia i popularności treści</td>
+                  <td>Art. 6 ust. 1 lit. f RODO — interes oceny dostępności i przydatności usługi, planowania jej rozwoju i rozpoznawania problemów, z uwzględnieniem zakresu danych oraz praw użytkowników, w szczególności małoletnich.</td>
+                </tr>
+                <tr>
+                  <td>Obsługa subskrypcji i uprawnień do płatnych funkcji</td>
+                  <td>Art. 6 ust. 1 lit. b RODO — wykonanie umowy z nabywcą; art. 6 ust. 1 lit. c RODO — właściwe obowiązki prawne.</td>
                 </tr>
                 <tr>
                   <td>Płatności, księgowość i obowiązki podatkowe</td>
@@ -438,8 +446,9 @@
           </div>
           <p>
             Jeżeli przetwarzanie opiera się na zgodzie, można ją wycofać w
-            dowolnym momencie. Wycofanie zgody działa na przyszłość.
+            dowolnym momencie, bez wpływu na zgodność z prawem przetwarzania sprzed jej wycofania. Wycofanie nie może być trudniejsze niż udzielenie zgody. Zgodę dotyczącą opcjonalnej funkcji możesz cofnąć przez jej ustawienia lub kontakt opisany w sekcji 1. Odebranie uprawnienia systemowego nie usuwa automatycznie danych już zapisanych na serwerze.
           </p>
+          <p>Podstawy z RODO nie zastępują wymogów dotyczących zapisu lub odczytu informacji z urządzenia. Jeżeli taka operacja nie jest niezbędna do dostarczenia usługi żądanej przez użytkownika, wymaga uprzedniej zgody na zasadach art. 399 Prawa komunikacji elektronicznej. Samo korzystanie z Aplikacji, zgoda na powiadomienia ani umowa z reklamodawcą nie stanowią takiej zgody. W sprawie sprzeciwu wobec przetwarzania opartego na uzasadnionym interesie skorzystaj z kontaktu w sekcji 1.</p>
           <p>
             Podanie danych jest dobrowolne, ale może być konieczne do
             skorzystania z wybranej funkcji. Bez tokenu powiadomień nie
@@ -531,6 +540,7 @@
             Framework dla uczestniczących podmiotów — standardowych klauzul
             umownych lub innego właściwego zabezpieczenia.
           </p>
+          <p>Informacje o dostawcy, kraju przetwarzania i mechanizmie właściwym dla Twojej sprawy oraz kopię odpowiednich zabezpieczeń lub wskazanie miejsca ich udostępnienia możesz uzyskać, pisząc na <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a>. Data Privacy Framework dotyczy wyłącznie transferów objętych certyfikacją uczestniczącego odbiorcy. Sam wybór europejskiego regionu bazy nie wyklucza dostępu spoza EOG przez obsługę lub podwykonawców.</p>
         </section>
 
         <section>
@@ -561,6 +571,9 @@
               <strong>pseudonimowe zdarzenia kampanii</strong> — co do zasady
               nie dłużej niż 13 miesięcy od zakończenia kampanii;
             </li>
+            <li><strong>statystyki treści</strong> — zdarzenia są objęte mechanizmem usuwania rekordów starszych niż 13 miesięcy; aktywność dzienna jest porządkowana po 13 miesiącach, a rekord instalacji lub przeglądarki po 13 miesiącach braku aktywności;</li>
+            <li><strong>korespondencja</strong> — przez czas obsługi sprawy, a następnie tylko w zakresie potrzebnym do udokumentowania jej rozwiązania lub realizacji konkretnego obowiązku albo roszczenia, do ustania tej potrzeby;</li>
+            <li><strong>informacje o subskrypcji</strong> — przez okres obsługi uprawnienia i rozliczenia, a następnie w zakresie wymaganym dla obowiązków prawnych, zwrotu lub konkretnego sporu;</li>
             <li>
               <strong>logi bezpieczeństwa</strong> — co do zasady nie dłużej niż
               90 dni, chyba że są potrzebne do wyjaśnienia incydentu;
@@ -620,6 +633,8 @@
             osoby składającej żądanie. Nie należy przesyłać hasła pocztą
             elektroniczną.
           </p>
+          <p>Usunięcie danych lub konta i anulowanie subskrypcji to odrębne działania. Subskrypcję kupioną w sklepie Apple lub Google anulujesz w ustawieniach tego sklepu; dla innego kanału użyj wskazanej tam obsługi zakupu. Odinstalowanie Aplikacji nie stanowi anulowania subskrypcji.</p>
+          <p>Możesz zgłosić sprzeciw wobec statystyk opartych na uzasadnionym interesie oraz żądanie usunięcia danych powiązanych z Twoją instalacją. Wspólnie ustalimy sposób odnalezienia rekordów, jeżeli nie znasz identyfikatora; nie wymagamy tworzenia konta wyłącznie w celu złożenia żądania.</p>
         </section>
 
         <section>
@@ -634,7 +649,7 @@
           <p>
             Żądania można kierować na
             <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a>.
-            Odpowiadamy bez zbędnej zwłoki, co do zasady w ciągu miesiąca.
+            Odpowiadamy bez zbędnej zwłoki, co do zasady w ciągu miesiąca. W razie uzasadnionej potrzeby przedłużenia terminu o maksymalnie dwa kolejne miesiące poinformujemy o tym i wyjaśnimy przyczynę w pierwszym miesiącu. Prawa mają warunki i wyjątki określone prawem.
             Użytkownik może również złożyć skargę do
             <a href="https://uodo.gov.pl/" target="_blank" rel="noreferrer"
               >Prezesa Urzędu Ochrony Danych Osobowych ↗</a
@@ -676,13 +691,9 @@
 
         <section>
           <h2><span>13</span> Osoby małoletnie</h2>
-          <p>
-            Aplikacja nie jest kierowana do dzieci poniżej 16 roku życia. Nie
-            zbieramy świadomie danych osobowych dzieci poniżej tego wieku.
-            Jeżeli opiekun uważa, że dziecko przekazało nam dane, powinien
-            skontaktować się z nami, abyśmy mogli je zweryfikować i usunąć,
-            jeżeli będzie to wymagane.
-          </p>
+          <p>Twoja Sieć jest usługą ogólnego przeznaczenia z lokalnymi informacjami; mogą korzystać z niej także osoby nastoletnie. Zwykły odbiór publicznych treści nie wymaga konta. Nie oznacza to jednak braku danych osobowych: informacje techniczne, identyfikatory, wybory miejscowości oraz opisane wyżej zdarzenia korzystania mogą dotyczyć również małoletnich.</p>
+          <p>Gdy usługa jest oferowana bezpośrednio dziecku, a podstawą przetwarzania jest zgoda, poniżej wieku wymaganego właściwym prawem konieczna jest zgoda lub autoryzacja osoby sprawującej władzę rodzicielską; w Polsce próg z art. 8 RODO wynosi 16 lat. Nie jest to ogólny zakaz czytania lokalnych wiadomości przez młodsze osoby. Interesy dzieci wymagają szczególnego uwzględnienia także przy przetwarzaniu opartym na uzasadnionym interesie.</p>
+          <p>Rodzic lub opiekun może napisać na <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a> w sprawie danych dziecka. Zweryfikujemy sprawę i usuniemy dane lub ograniczymy przetwarzanie, gdy wymagają tego przepisy. Nie należy umieszczać w zgłoszeniu wydarzenia zbędnych danych ani prywatnych informacji o dzieciach.</p>
         </section>
 
         <section>
@@ -707,7 +718,7 @@
           </p>
           <p>
             W przypadku istotnych zmian poinformujemy o nich w Aplikacji lub
-            innym odpowiednim kanałem. Data ostatniej aktualizacji znajduje się
+            innym odpowiednim kanałem. Aktualizacja Polityki nie zastępuje zgody na nowy cel, jeżeli taka zgoda jest wymagana. Data ostatniej aktualizacji znajduje się
             na początku dokumentu.
           </p>
         </section>

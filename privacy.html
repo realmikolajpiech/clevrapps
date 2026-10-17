@@ -59,7 +59,7 @@
         "isPartOf": { "@id": "https://clevrapps.com/#website" },
         "about": { "@id": "https://clevrapps.com/#organization" },
         "inLanguage": "en",
-        "dateModified": "2026-09-22"
+        "dateModified": "2026-10-17"
       }
     </script>
   </head>
@@ -97,220 +97,76 @@
         <p class="kicker">Legal / Privacy</p>
         <h1>Privacy policy</h1>
         <div class="policy-meta">
-          <p>Last updated: September 23, 2026</p>
-          <p>Plain language. No hidden surprises.</p>
+          <p>Last updated: 17 October 2026</p>
         </div>
       </header>
 
       <article class="policy-content">
         <p>App-specific privacy policies: <a href="/twinshadows/privacy-policy">Twin Shadows (English)</a>, <a href="/zielonka/privacy-policy">Zielonka App (Polski)</a> and <a href="/twojasiec/privacy-policy">Twoja Sieć (Polski)</a>. For these apps, the app-specific policy describes their data processing.</p>
-        <p class="policy-intro">
-          Mikołaj Piech ("I", "me", or "my") respects your privacy and is
-          committed to protecting your personal data. This Privacy Policy
-          explains how I collect, use, store, and protect information when you
-          use the Clevr Apps website and any mobile applications I publish on
-          Google Play or the Apple App Store, and web applications I operate
-          (collectively "the Services"), including Forkday, Trailo, Subby,
-          Meant, Doso, and Sitting Time.
-        </p>
+        <p class="policy-intro">Mikołaj Piech, an individual based in Poland using the developer brand Clevr Apps, is the controller for the personal information described in this notice. Clevr Apps is a brand, not a separate company. Privacy contact: <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a>.</p>
+        <p>This notice covers the Clevr Apps website and the published applications to which it is linked, including Subby, Doso, Trailo, Meant, and Sitting Time. Only the features you use involve the corresponding data processing. More detailed notices are also available for <a href="https://trailoapp.com/privacy">Trailo</a> and <a href="https://mikolajpiech.com/doso/privacy">Doso</a>; those notices describe their specific features. Twoja Sieć, Zielonka App, and Twin Shadows have the separate notices linked above.</p>
+        <p>Forkday has not publicly launched, and this notice does not describe its unreleased features. Version-specific privacy information will accompany its public release and any applicable test version. References to a provider in this policy do not mean that every app sends data to that provider.</p>
 
         <section>
-          <h2><span>01</span> Information I Collect</h2>
-          <h3>A. Information You Provide Directly</h3>
+          <h2><span>01</span> Information Processed and Where It Comes From</h2>
+          <h3>Information you choose to provide</h3>
           <ul>
-            <li>
-              Name, email address, and any information you include when you
-              contact me by email
-            </li>
-            <li>Email address and password (when you create an account)</li>
-            <li>Display name or nickname</li>
-            <li>
-              In Forkday: meal preferences, dietary restrictions and allergies,
-              household details, pantry and shopping items, recipes, cooking
-              history, and any food images or voice requests you choose to share
-            </li>
-            <li>
-              Photos of homework/exercises you take within certain apps (stored
-              securely on your device and in the cloud only for your personal
-              use)
-            </li>
-            <li>
-              User-provided images in the Meant app (which may contain faces or
-              other personal depictions) – these are stored exclusively locally
-              on your device and never uploaded to my servers
-            </li>
-            <li>
-              Billing information processed through RevenueCat and the Google
-              Play / Apple App Store payment systems (I never see or store your
-              full payment card details)
-            </li>
+            <li><strong>Correspondence:</strong> your name, email address, message, attachments, and ordinary email metadata when you contact me.</li>
+            <li><strong>Accounts, where offered:</strong> email address, display name, service-generated user identifier, authentication credentials handled by the authentication provider, and information returned by Apple or Google if you choose their sign-in service.</li>
+            <li><strong>Subby:</strong> the subscription records you enter, including service names, prices, currency, billing dates, categories, profile names, and optional income information. Current versions store these records on your device. Older versions may have account or synchronized records held in Supabase.</li>
+            <li><strong>Optional Subby bank connection:</strong> if you use this feature, Enable Banking and the bank you authorize provide account and transaction information needed to find recurring payments. Subby's server processes those records; unmatched merchant descriptions, amounts, and currencies can be sent to xAI to identify the subscription, including through web search. You can add subscriptions manually instead.</li>
+            <li><strong>Doso:</strong> medication names, dosage and timing instructions, schedules, dose history, inventory, profiles, health journal entries, and preferences entered on your device. Optional Connected Family sends shared profiles, medication plans, dose history, account and household membership information, invitations, and notification settings to Supabase and makes shared records accessible to authorized household members. Optional AI requests can include medication names, text or dictated transcripts, questions, and optional age or biological sex; they pass through Doso's server to xAI. The <a href="https://mikolajpiech.com/doso/privacy">Doso notice</a> describes these choices in more detail.</li>
+            <li><strong>Trailo:</strong> account information, trip plans, planning messages, uploaded travel documents, traveler details, invitations, and collaboration or booking information that you choose to submit. Relevant messages and selected trip information are processed by AI services as described in the <a href="https://trailoapp.com/privacy">Trailo notice</a>.</li>
+            <li>User-provided images in the Meant app (which may contain faces or other personal depictions) – these are stored exclusively locally on your device and never uploaded to my servers</li>
           </ul>
-          <h3>B. Automatically Collected Information</h3>
-          <ul>
-            <li>
-              Device information (device model, operating system version, unique
-              device identifiers)
-            </li>
-            <li>Approximate location (derived from IP address)</li>
-            <li>Usage data and crash reports (via Expo and related tools)</li>
-            <li>
-              Push notification token (to send you notifications if you enable
-              them)
-            </li>
-            <li>
-              In the future, if I display ads: Advertising ID (IDFA on iOS, AAID
-              on Android) – resettable by you
-            </li>
-          </ul>
+          <h3>Purchases, technical information, and notifications</h3>
+          <p>The apps offer subscriptions. Apple or Google handles store payments; apps using RevenueCat send an app-specific purchaser identifier, product identifiers, purchase receipts or tokens, transaction and renewal status, and necessary device or app information to validate, restore, and manage access. I do not receive your full payment-card number. Where a web payment is offered through Stripe, Stripe handles the payment details and returns the information needed to confirm the purchase and meet billing obligations.</p>
+          <p>Connections to the website and online app features expose technical information such as IP address, request time, browser or app version, platform, response status, and error information to the relevant server and infrastructure providers. Purchase and authentication providers also supply transaction and account status. Notification services process a device token and the delivery information needed for an enabled notification feature. Local reminders can operate on the device without a remote push token.</p>
+          <h3>Whether information is required</h3>
+          <p>Providing information is voluntary unless a particular legal obligation applies. Without required account information, an account cannot be created; without transaction verification, paid access cannot be activated or restored; without a submitted AI request, that AI feature cannot provide an answer. You can decline optional microphone, location, photo, and notification access, although the associated feature will be unavailable. Information about another person should be supplied only where you have authority and an appropriate legal basis to do so.</p>
         </section>
 
         <section>
-          <h2><span>02</span> How I Use Your Information</h2>
+          <h2><span>02</span> Purposes of Processing</h2>
           <ul>
-            <li>
-              To receive and respond to support, partnership, and acquisition
-              enquiries
-            </li>
-            <li>To create and manage your account</li>
-            <li>To provide and improve the Services</li>
-            <li>
-              To process subscriptions and payments via RevenueCat and the app
-              stores
-            </li>
-            <li>To send push notifications (only if you allow them)</li>
-            <li>
-              To store your homework photos securely so you can access them
-              across your devices
-            </li>
-            <li>
-              In the Meant app: To enable user-requested AI image editing and
-              generation by transmitting images to Google&rsquo;s Gemini API
-            </li>
-            <li>
-              In Forkday: To generate meal suggestions, recipes, images, and
-              voice transcriptions using the information needed for each request
-            </li>
-            <li>
-              For analytics and crash reporting (to fix bugs and improve the
-              apps)
-            </li>
-            <li>
-              In the future, if I display ads via Google AdMob: to serve and
-              measure personalized or non-personalized ads
-            </li>
+            <li>Provide the app features you request, including accounts, saved information, synchronization, authorized sharing, and travel planning.</li>
+            <li>Validate purchases, manage subscription entitlements, restore access, address billing enquiries, and prevent payment fraud.</li>
+            <li>Answer support, partnership, and acquisition enquiries, investigate reported problems, and handle privacy requests.</li>
+            <li>Deliver reminders and service notifications that you enable, including relevant family or trip updates.</li>
+            <li>In the Meant app: To enable user-requested AI image editing and generation by transmitting images to Google&rsquo;s Gemini API</li>
+            <li>Perform optional Doso AI requests and optional Subby recurring-payment identification using the information needed for the selected feature.</li>
+            <li>Maintain availability and security, diagnose errors, prevent abuse, and comply with legal obligations or handle legal claims.</li>
           </ul>
+          <p>This notice does not authorize future advertising or new uses of health, financial, or other personal information. Relevant notices and any required consent must be provided before a new processing purpose begins. Health records are not used to target advertising.</p>
         </section>
 
         <section>
-          <h2>
-            <span>03</span> Legal Basis <small>(EEA/UK users – GDPR)</small>
-          </h2>
+          <h2><span>03</span> Legal Bases</h2>
           <ul>
-            <li>
-              <strong>Contract:</strong> to provide the account, subscription,
-              and core app features
-            </li>
-            <li>
-              <strong>Consent:</strong> push notifications, future personalized
-              advertising
-            </li>
-            <li>
-              <strong>Legitimate interests:</strong> analytics, crash reporting,
-              fraud prevention
-            </li>
+            <li><strong>Requested services and purchases — Article 6(1)(b) GDPR:</strong> processing objectively necessary to provide an account, requested online feature, synchronization, subscription entitlement, or payment-related service under the applicable contract.</li>
+            <li><strong>Support and security — Article 6(1)(f):</strong> the legitimate interests of answering enquiries, maintaining reliable services, investigating errors, preventing abuse and fraud, and establishing, exercising, or defending legal claims. These interests must be balanced against users' rights, particularly where children are concerned.</li>
+            <li><strong>Legal obligations — Article 6(1)(c):</strong> processing required by applicable tax, accounting, consumer, or privacy law.</li>
+            <li><strong>Optional processing requiring consent — Article 6(1)(a):</strong> the particular purpose described when consent is requested. A device permission controls technical access; it is not permission for unrelated processing.</li>
           </ul>
+          <p><strong>Health information:</strong> an Article 6 basis alone does not permit processing of special-category health data. Optional Doso AI processing of health information relies on explicit consent under Article 9(2)(a), requested separately before transmission. You can decline that feature or withdraw consent in Doso's AI settings. Sharing another person's health information requires their applicable consent or another valid legal authority; a purchase or subscription does not itself provide that authority.</p>
+          <p>Withdrawing consent stops the processing that depends on it without making earlier processing unlawful. You can contact <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a> about withdrawal or an objection. Necessary service processing is not treated as optional consent simply because the feature is accessed through an app.</p>
         </section>
 
         <section>
-          <h2><span>04</span> Sharing of Information</h2>
-          <p><strong>I do not sell your personal data.</strong></p>
-          <p>Your data may be shared with the following trusted partners:</p>
+          <h2><span>04</span> Recipients and Service Providers</h2>
+          <p>I do not sell personal information. Information is disclosed only to providers needed for the feature, authorized people you share with, or where required by law or necessary for legal claims.</p>
           <div class="table-scroll">
             <table>
-              <thead>
-                <tr>
-                  <th>Partner</th>
-                  <th>Purpose</th>
-                  <th>Privacy Policy</th>
-                </tr>
-              </thead>
+              <thead><tr><th>Provider</th><th>Relevant processing</th><th>Further information</th></tr></thead>
               <tbody>
-                <tr>
-                  <td>Supabase</td>
-                  <td>Forkday account, preferences, plans, and cooking history</td>
-                  <td>
-                    <a href="https://supabase.com/privacy" target="_blank" rel="noreferrer">supabase.com ↗</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>DeepSeek</td>
-                  <td>AI meal planning and recipe responses in Forkday</td>
-                  <td>
-                    <a href="https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html" target="_blank" rel="noreferrer">deepseek.com ↗</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>OpenAI</td>
-                  <td>Requested food image generation and voice transcription in Forkday</td>
-                  <td>
-                    <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noreferrer">openai.com ↗</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>RevenueCat</td>
-                  <td>Subscription billing</td>
-                  <td>
-                    <a
-                      href="https://revenuecat.com/privacy"
-                      target="_blank"
-                      rel="noreferrer"
-                      >revenuecat.com ↗</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>Apple App Store / Google Play</td>
-                  <td>Payment processing & app distribution</td>
-                  <td>
-                    <a
-                      href="https://apple.com/legal/privacy"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Apple ↗</a
-                    >
-                    /
-                    <a
-                      href="https://policies.google.com/privacy"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Google ↗</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>Expo / EAS</td>
-                  <td>App building, updates, analytics</td>
-                  <td>
-                    <a
-                      href="https://expo.dev/privacy"
-                      target="_blank"
-                      rel="noreferrer"
-                      >expo.dev ↗</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>Firebase / Google Cloud</td>
-                  <td>Crash reporting, cloud storage for homework photos</td>
-                  <td>
-                    <a
-                      href="https://firebase.google.com/support/privacy"
-                      target="_blank"
-                      rel="noreferrer"
-                      >firebase.google.com ↗</a
-                    >
-                  </td>
-                </tr>
+                <tr><td>Supabase</td><td>Authentication and relevant account, shared-family, travel, feedback, or legacy synchronized records, depending on the app</td><td><a href="https://supabase.com/privacy">Privacy notice</a></td></tr>
+                <tr><td>RevenueCat</td><td>Purchase validation, subscription entitlements, and restoration in apps using RevenueCat</td><td><a href="https://www.revenuecat.com/privacy">Privacy notice</a></td></tr>
+                <tr><td>Apple / Google</td><td>App distribution, store payments, chosen sign-in services, platform speech recognition, and remote notification delivery where used</td><td><a href="https://www.apple.com/legal/privacy/">Apple</a> / <a href="https://policies.google.com/privacy">Google</a></td></tr>
+                <tr><td>Stripe</td><td>Web payments where offered, purchase confirmation, refunds, and payment security</td><td><a href="https://stripe.com/privacy">Privacy notice</a></td></tr>
+                <tr><td>xAI</td><td>Relevant Trailo AI requests, optional Doso AI requests, and optional Subby merchant identification</td><td><a href="https://x.ai/legal/privacy-policy">Privacy notice</a></td></tr>
+                <tr><td>Enable Banking and your selected bank</td><td>Account access and transaction retrieval when you choose Subby's bank-connection feature</td><td><a href="https://enablebanking.com/privacy-policy">Privacy notice</a></td></tr>
+                <tr><td>Cloudflare</td><td>App server endpoints and technical request processing for features using that infrastructure</td><td><a href="https://www.cloudflare.com/privacypolicy/">Privacy notice</a></td></tr>
+                <tr><td>Expo / EAS</td><td>App delivery and updates; push-token and delivery processing where remote notifications are enabled</td><td><a href="https://expo.dev/privacy">Privacy notice</a></td></tr>
                 <tr>
                   <td>Google LLC (Gemini API)</td>
                   <td>AI image generation and editing in the Meant app</td>
@@ -323,26 +179,13 @@
                     >
                   </td>
                 </tr>
-                <tr>
-                  <td>Google AdMob (future)</td>
-                  <td>Advertising (if implemented)</td>
-                  <td>
-                    <a
-                      href="https://support.google.com/admob/answer/6128543"
-                      target="_blank"
-                      rel="noreferrer"
-                      >support.google.com ↗</a
-                    >
-                  </td>
-                </tr>
+                <tr><td>Vercel</td><td>Hosting the Clevr Apps website, serving requests, and associated technical and security logs</td><td><a href="https://vercel.com/legal/privacy-policy">Privacy notice</a></td></tr>
+                <tr><td>Google Fonts</td><td>Font delivery on the Clevr Apps website, including the request information needed to return the font</td><td><a href="https://policies.google.com/privacy">Privacy notice</a></td></tr>
               </tbody>
             </table>
           </div>
-          <p>
-            Data is primarily stored in the United States and the European
-            Union. Forkday meal requests sent to DeepSeek may also be processed
-            and stored in China under DeepSeek&rsquo;s policies.
-          </p>
+          <p>Email providers process correspondence when you contact me. Account, payment, and distribution providers may also act as independent controllers for their own purposes. Providers acting on my behalf process app information under the applicable service and data-processing terms.</p>
+          <p>If you invite a collaborator or join a shared household or trip, the relevant records become accessible to authorized participants. Removing access does not erase copies they have already downloaded or independently retained.</p>
         </section>
 
         <section>
@@ -397,86 +240,57 @@
         </section>
 
         <section>
-          <h2><span>06</span> Data Retention</h2>
-          <p>
-            I keep your data only as long as your account exists or as needed to
-            provide the Services. Where an app offers account deletion in its
-            settings, you can use that control to remove associated data. For
-            Forkday, you can delete your account and associated cloud data in
-            the app; see the <a href="forkday-delete-account.html">Forkday account deletion instructions</a>. For images in the Meant app,
-            retention is local to your device only.
-          </p>
-        </section>
-
-        <section>
-          <h2><span>07</span> Your Rights & Choices</h2>
+          <h2><span>06</span> Retention and Deletion</h2>
           <ul>
-            <li>Access, correct, or delete your personal data</li>
-            <li>
-              Withdraw consent (e.g., for push notifications or personalized
-              ads)
-            </li>
-            <li>
-              Opt out of future personalized advertising (via device settings)
-            </li>
-            <li>Request export of your data</li>
-            <li>Lodge a complaint with your local data protection authority</li>
+            <li><strong>Local information:</strong> retained until you delete the relevant records, clear the app's storage, or uninstall it, subject to the platform's storage and backup behavior. Exported files and copies in your own backups must be managed separately.</li>
+            <li><strong>Accounts and online records:</strong> retained while needed to provide the requested account or feature, until you delete the relevant data or account, subject to necessary legal exceptions. Shared records may remain for other authorized participants where there is a continuing lawful reason.</li>
+            <li><strong>Support correspondence:</strong> retained while handling the enquiry and, where necessary afterward, to document its resolution or address a related dispute. Further retention must be limited to the applicable obligation or claim period.</li>
+            <li><strong>Purchase and accounting records:</strong> retained for the applicable statutory tax and accounting periods and any necessary refund, fraud, or dispute handling. Payment providers may retain records independently under their own obligations.</li>
+            <li><strong>Technical logs:</strong> retained for the period needed to operate, secure, and diagnose the relevant service, taking account of the provider's configured log-retention period. Incident records may need to be retained until the incident or associated claim is resolved.</li>
+            <li><strong>Backups:</strong> deleted records can remain in restricted backups until those backups expire or are replaced in the applicable backup cycle. They must not be restored to ordinary use without applying the deletion again.</li>
+            <li><strong>AI and bank-service requests:</strong> providers can retain request information under their applicable service, abuse-prevention, and legal-retention terms. A local storage feature does not mean information sent to a provider is never retained there.</li>
           </ul>
-          <p>
-            California residents: You have additional rights under CCPA/CPRA. I
-            do not sell or share your personal information for cross-context
-            behavioral advertising.
-          </p>
-          <p>
-            To exercise any right, write to
-            <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a>.
-          </p>
+          <p>Where an app offers account deletion, use its account controls or contact <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a> to request deletion from outside the app. Identify the app and the account or record concerned. I may request proportionate information to verify your authority; do not send passwords. I will explain any specific legal reason for retaining information after a deletion request.</p>
+          <p><strong>Subscription cancellation is separate from data or account deletion.</strong> Manage an Apple or Google subscription in the relevant store's subscription settings. Uninstalling an app or deleting its account does not automatically cancel a store subscription.</p>
         </section>
 
         <section>
-          <h2><span>08</span> Children&rsquo;s Privacy</h2>
-          <p>
-            My apps are not directed to children under 13 (or 16 in the EEA). I
-            do not knowingly collect personal information from children. If I
-            learn that a child has provided personal information, I will delete
-            it immediately.
-          </p>
+          <h2><span>07</span> Your Rights and Choices</h2>
+          <p>Where GDPR applies, you can request access to your personal information, a copy, correction, deletion, or restriction of processing. You can object to processing based on legitimate interests. Portability applies where the relevant statutory conditions are met. You can withdraw consent at any time without affecting the lawfulness of processing before withdrawal. These rights have legal conditions and exceptions.</p>
+          <p>Send requests to <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a>. I respond without undue delay and normally within one month. Where complexity or the number of requests justifies an extension of up to two further months, I will explain the extension within the first month. Identity checks will be proportionate to the request.</p>
+          <p>You can complain to a competent supervisory authority, including Poland's President of the Personal Data Protection Office (UODO): <a href="https://uodo.gov.pl/en">uodo.gov.pl/en</a>. You do not have to contact me first. I cannot remotely access or erase information held only on your device; the app's local controls and device-storage settings manage that information.</p>
+          <p>Where another applicable privacy law gives you additional rights, you can exercise them using the same contact address.</p>
         </section>
 
         <section>
-          <h2><span>09</span> Security</h2>
-          <p>
-            I use industry-standard technical and organizational measures
-            (encryption, secure cloud providers, access controls) to protect
-            your data.
-          </p>
+          <h2><span>08</span> Children and Other People's Information</h2>
+          <p>The website is a general product and support website. Each app's intended audience, available features, and store rating should be read with its specific notice. An age rating does not mean no information about children can be processed, for example in records supplied by an authorized parent or guardian.</p>
+          <p>Where an online service is offered directly to a child and consent is the legal basis, parental authorization must be obtained where required by the applicable national age threshold. GDPR's consent rules do not establish one universal minimum age for using every app. Parents and guardians can contact <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a> concerning a child's information.</p>
+          <p>Do not submit another person's health, financial, travel, or other private information without appropriate authority. If I receive information without the required lawful basis or parental authorization, I will delete it unless retention is legally required, or obtain the required authorization before continuing the processing.</p>
+        </section>
+
+        <section>
+          <h2><span>09</span> Website Storage and Security</h2>
+          <p>The Clevr Apps website is hosted by Vercel and loads fonts from Google Fonts. Opening a page causes requests to those providers, which receive the IP address and other request information needed to return the content. The website's own code does not install analytics or advertising trackers. This statement concerns clevrapps.com; the separate websites and online app features have their own storage and service behavior.</p>
+          <p>App storage, sign-in sessions, purchase validation, and selected preferences can require device storage or cookies. Non-essential analytics or advertising storage requires any consent applicable under electronic-communications law; a GDPR legitimate-interest basis does not replace that requirement.</p>
+          <p>I use measures appropriate to the service and risk, including encrypted transport for online connections, access restrictions, and the security facilities of the relevant providers. Security differs between local files, account storage, shared records, and information sent to an external service. No electronic transmission or storage method guarantees complete security.</p>
         </section>
 
         <section>
           <h2><span>10</span> International Transfers</h2>
-          <p>
-            Your data may be transferred to — and stored in — the United States
-            or other countries outside your residence. I use appropriate
-            safeguards (EU Standard Contractual Clauses, etc.) when required.
-          </p>
+          <p>Providers including RevenueCat, Apple, Google, Expo, xAI, Supabase, Cloudflare, Stripe, and Vercel can process relevant information outside Poland or the European Economic Area, including in the United States. The location and recipient depend on the feature and provider; a European database region does not by itself mean that all support, logging, or subprocessors are confined to the EEA.</p>
+          <p>For transfers requiring safeguards under GDPR, I use the mechanisms in the relevant provider's data-processing terms, including the European Commission's standard contractual clauses and any necessary supplementary measures. An adequacy decision can cover transfers to an eligible recipient; the EU–US Data Privacy Framework covers only the relevant transfers to participating organizations.</p>
+          <p>Contact <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a> to ask which mechanism applies to your service and to obtain a copy of the relevant safeguards or information on where they are available, with necessary redactions to protect other people's information.</p>
         </section>
 
         <section>
-          <h2><span>11</span> Changes to This Policy</h2>
-          <p>
-            I may update this Privacy Policy from time to time. The new version
-            will be posted on this page with an updated "Last updated" date.
-            Significant changes will be notified inside the apps.
-          </p>
+          <h2><span>11</span> Changes to This Notice</h2>
+          <p>I update this notice when the relevant features, providers, or processing purposes change, and revise the date above. Where required, material changes will also be communicated in the relevant app or another appropriate channel before the new processing starts. Publishing a revised notice is not a substitute for obtaining consent where consent is required.</p>
         </section>
 
         <section>
-          <h2><span>12</span> Contact Me</h2>
-          <address>
-            Mikołaj Piech<br />
-            Email: mikolaj@clevrapps.com<br />
-            Website: <a href="index.html">Clevr Apps</a>
-          </address>
+          <h2><span>12</span> Controller and Contact</h2>
+          <address>Mikołaj Piech<br />Individual operator using the Clevr Apps brand<br />Poland<br />Email: <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a><br />Website: <a href="/">clevrapps.com</a></address>
         </section>
       </article>
     </main>
