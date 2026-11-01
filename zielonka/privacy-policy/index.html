@@ -63,7 +63,7 @@
         "isPartOf": { "@id": "https://clevrapps.com/#website" },
         "about": { "@type": "SoftwareApplication", "name": "Zielonka App" },
         "inLanguage": "pl",
-        "dateModified": "2026-10-05"
+        "dateModified": "2026-11-01"
       }
     </script>
   </head>
@@ -104,13 +104,13 @@
         <p class="kicker">Zielonka App / Prywatność</p>
         <h1>Polityka prywatności</h1>
         <div class="policy-meta">
-          <p>Ostatnia aktualizacja: 5 października 2026</p>
+          <p>Ostatnia aktualizacja: 1 listopada 2026</p>
           <p>Dotyczy aplikacji mobilnej Zielonka App i powiązanych usług.</p>
         </div>
       </header>
 
       <article class="policy-content">
-        <p class="policy-intro">Ta polityka opisuje dane przetwarzane przez Zielonka App: dziennik eduVULCAN, opcjonalne powiadomienia oraz funkcje społecznościowe Spotted i Pomysły. Wyjaśnia również, co jest zapisywane na urządzeniu, co trafia na serwery i jak poprosić o usunięcie danych.</p>
+        <p class="policy-intro">Ta polityka opisuje dane przetwarzane przez Zielonka App: dziennik szkolny, opcjonalne powiadomienia oraz funkcje społecznościowe Spotted i Pomysły. Wyjaśnia również, co jest zapisywane na urządzeniu, co trafia na serwery i jak poprosić o usunięcie danych.</p>
         <section>
           <h2><span>01</span> Współadministratorzy i kontakt</h2>
           <p>Współadministratorami danych przetwarzanych w ramach Zielonka App są <strong>Oskar Minor, Mikołaj Piech, Bartłomiej Wąsik i Kamil Zdebski</strong>. Clevr Apps jest marką używaną przez Mikołaja Piecha, a nie odrębnym administratorem.</p>
@@ -130,11 +130,11 @@
         </section>
         <section>
           <h2><span>03</span> Logowanie i opcjonalne powiadomienia</h2>
-          <p>Przy zwykłym korzystaniu z dziennika aplikacja na urządzeniu łączy się z eduVULCAN, uwierzytelnia konto i pobiera dane do wyświetlenia. Dane dziennika są buforowane lokalnie, aby przyspieszyć działanie.</p>
-          <p><strong>Powiadomienia o zmianach w dzienniku wymagają dodatkowego przetwarzania na naszym serwerze.</strong> Po włączeniu tej funkcji i uzyskaniu uprawnienia do powiadomień aplikacja przesyła do serwera powiadomień login, hasło, tenant, dane sesji, identyfikatory ucznia i dziennika, klasę, numer w dzienniku oraz token push. Serwer przechowuje te dane i sprawdza zmiany w eduVULCAN również wtedy, gdy aplikacja jest zamknięta.</p>
+          <p>Przy podstawowym, interaktywnym korzystaniu z dziennika aplikacja mobilna łączy się bezpośrednio przez HTTPS z systemem dziennika szkoły, uwierzytelnia konto i pobiera dane do wyświetlenia. Dodatkowe przekazywanie poświadczeń do naszego serwera dotyczy funkcji powiadomień w tle opisanej poniżej. Dane dziennika są buforowane lokalnie, aby przyspieszyć działanie. W wersji internetowej formularz przekazuje dane logowania do serwera aplikacji, który uwierzytelnia konto w systemie dziennika.</p>
+          <p><strong>Powiadomienia o zmianach w dzienniku wymagają dodatkowego przetwarzania na naszym serwerze.</strong> Po włączeniu tej funkcji i uzyskaniu uprawnienia do powiadomień aplikacja przesyła do serwera powiadomień login, hasło, tenant, dane sesji, identyfikatory ucznia i dziennika, klasę, numer w dzienniku oraz token push. Serwer przechowuje te dane, a login, hasło i dane sesji zapisuje w postaci zaszyfrowanej. Sprawdza nowe oceny, wiadomości, sprawdziany i zmiany planu w imieniu zalogowanego użytkownika również wtedy, gdy aplikacja jest zamknięta. Poświadczenia służą obsłudze tego monitoringu, a nie reklamie ani sprzedaży danych.</p>
           <p>Serwer zapisuje dane porównawcze potrzebne do rozpoznania nowych ocen, sprawdzianów, wiadomości i zmian planu, a także kolejkę powiadomień i techniczne informacje o ich dostarczeniu. Wysyłka korzysta z Expo Push Service oraz odpowiednio Apple Push Notification service lub Firebase Cloud Messaging. Dostawcy wysyłki otrzymują token i treść powiadomienia; hasła eduVULCAN nie są częścią komunikatu push.</p>
           <p>Powiadomienia społecznościowe korzystają z osobnego powiązania identyfikatora urządzenia z tokenem push. Treść powiadomienia może pojawić się na zablokowanym ekranie — sposób wyświetlania podglądu możesz zmienić w ustawieniach systemu.</p>
-          <p>Wyłączenie powiadomień w ustawieniach aplikacji powoduje próbę wyrejestrowania urządzenia i dezaktywacji powiadomień na serwerze. Samo odebranie uprawnienia w systemie blokuje wyświetlanie, ale nie stanowi żądania usunięcia danych z serwera. Wyrejestrowanie wymaga działającego połączenia z siecią.</p>
+          <p>Wyłączenie powiadomień w ustawieniach aplikacji lub wylogowanie powoduje próbę wyrejestrowania urządzenia i dezaktywacji monitoringu na serwerze. Przy wylogowaniu bez połączenia z siecią klient zapisuje oczekujące wyrejestrowanie i ponawia je przy kolejnej próbie synchronizacji po odzyskaniu połączenia. Do czasu skutecznego wyrejestrowania monitoring na serwerze może nadal działać. Samo odebranie uprawnienia w systemie blokuje wyświetlanie powiadomień, ale nie stanowi żądania usunięcia danych z serwera.</p>
         </section>
         <section>
           <h2><span>04</span> Spotted, Pomysły i moderacja</h2>
