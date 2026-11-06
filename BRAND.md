@@ -4,13 +4,14 @@
 
 Keep Clevr Apps. It is a useful umbrella name for the products and the business. Describe it as an independent app studio when a label is needed; on the website, simply explain that it is the name Mikołaj publishes his apps under.
 
-The previous websites both tried to sell the same thing: the ability to build software. That made the studio read like an agency and the personal website read like another agency homepage. Clevr is now a compact product directory; the personal site retains the earlier portfolio design preferred by Mikołaj.
+The previous websites both tried to sell the same thing: the ability to build software. That made the studio read like an agency and the personal website read like another agency homepage. Clevr is a product directory with real app previews; the personal site retains the portfolio design preferred by Mikołaj.
 
 | Place                      | Who it serves                             | What belongs here                                                                       |
 | -------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------- |
 | clevrapps.com              | People looking for or using an app        | What the apps do, screenshots, platforms, downloads, support, privacy, ownership/status |
 | mikolajpiech.com           | People interested in Mikołaj              | A personal introduction, the stories behind projects, collaborators, interests, contact |
-| mikolajpiech.com/portfolio | Potential clients and collaborators       | Detailed project work, scope, role, technical information                               |
+| mikolajpiech.com/portfolio | People exploring Mikołaj's work           | Three selected stories and short links to other projects                               |
+| mikolajpiech.com/projects/... | Readers interested in how a project was built | Personal role, motivation, product decisions, recorded results, optional technical details |
 | Individual product sites   | People interested in one specific product | The product's own identity, detailed explanation, purchase or download                  |
 
 ## How the two sites connect
@@ -48,7 +49,7 @@ Keep clear space around the wordmark of at least half its letter height. Use cha
 
 Lead with the app's job. “Track subscriptions and renewal dates” is useful; “a better digital life” is not. Make download and support links easy to find. Avoid service lists, “we” for a solo developer, growth counters, sales funnels, and acquisition pitches above the apps.
 
-Separate live products, products in development, and acquired products. Solvee remains as an archive rather than pretending it is still available from this publisher. Twoja Sieć remains clearly in development until its launch is confirmed.
+Separate available products from acquired and paused projects. Jedziemy, Trailo, Subby, Doso and Twoja Sieć appear in the active directory. Jedziemy is a separate venture co-founded with Marcel Chudyba; inclusion in this directory does not make Clevr Apps its publisher. Solvee is an acquired project; Charmy Books and Arie are currently on hold, as confirmed by Mikołaj. Their pages are historical archives with no current download or launch promises. Charmy Books is the current name; historical screenshots retain earlier JustMine branding and are labeled accordingly.
 
 ## Making the personal site more personal
 
@@ -58,10 +59,14 @@ The next useful addition is real non-work material: a few candid photographs, in
 
 This is a local implementation and brand direction, not a deployment. Review product availability and personal copy before publishing.
 
-## Simpler directory layout
+## Product directory layout
 
-The homepage gives each app one icon, name, platform line, short description, and a single clickable entry. Screenshots, feature explanations, and download choices live on product pages. There is no separate founder section, overlapping phone artwork, or repeated app call to action on the homepage.
+Keep the homepage minimal: the “Apps by Mikołaj Piech” heading, five active projects, and a compact footer. Each app gets its icon, name, a short functional label, real screenshots, and direct store/web links. The name and screenshot link to the product page. Use the same preview size for every app. Keep historical projects in a collapsed Archive section.
+
+Do not add marketing slogans, explanatory hero copy, a “find your next app” call to action, category badges, founder paragraphs, repeated project links, or a separate support pitch. The founder's name links to the personal site. Contact is a plain email link in the footer. This minimalism is an explicit preference from Mikołaj.
+
+Use real captures from the apps and websites. Do not generate or redraw the UI. Label historical material honestly: Solvee uses original store screenshots; Charmy Books shows older website branding; Arie uses a screenshot of its original website, including an illustrative demo. Do not present that Arie website demo as a capture of a released application.
 
 ## Product pages
 
-Product pages use the same 1000px content width, DM Sans type, white background and soft gray surfaces as the homepage. Start with the app icon, name, platforms and direct download links. Follow with a short description, original screenshots, practical features and support. Screenshots scroll horizontally on narrow screens; galleries remain keyboard accessible. Keep acquired products clearly labeled.
+Product pages follow the same restraint: app identity, available links, one concise sentence and original screenshots. Put access/pricing facts in a collapsed Details section. Keep support and the contextual project-story link in the footer. Story links exist only for Solvee, Jedziemy and Twoja Sieć and lead to their dedicated personal story pages, not to another product catalog. Do not repeat download buttons or add separate maker and promotional sections. Use source-confirmed information and avoid invented prices or availability. Galleries remain keyboard accessible. Keep paused and acquired projects clearly labeled. `data/apps.json` is the common source for the directory, detail pages and product metadata.

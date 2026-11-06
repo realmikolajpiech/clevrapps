@@ -1,0 +1,646 @@
+[
+  {
+    "id": "jedziemy",
+    "name": "Jedziemy",
+    "status": "live",
+    "category": "Driving schools",
+    "label": "Driving school software",
+    "platforms": "Web & mobile app",
+    "operatingSystem": "Web, mobile",
+    "schemaCategory": "BusinessApplication",
+    "path": "/apps/jedziemy/",
+    "icon": "/assets/apps/previews/jedziemy-icon-160.webp",
+    "headline": "Driving school software.",
+    "description": "A driving school platform connecting the office, instructors and students through lesson scheduling, hour and payment tracking, and theory practice. Co-founded by Mikołaj Piech and Marcel Chudyba.",
+    "shortDescription": "Schedule driving lessons, track hours and payments, and practise theory.",
+    "previewStyle": "jedziemy",
+    "screenshots": [
+      {
+        "src": "/assets/apps/previews/jedziemy-1-800.webp",
+        "small": "/assets/apps/previews/jedziemy-1-420.webp",
+        "width": 600,
+        "height": 1304,
+        "alt": "Jedziemy driving theory course with a category B learning path",
+        "caption": "Theory course"
+      },
+      {
+        "src": "/assets/apps/previews/jedziemy-2-800.webp",
+        "small": "/assets/apps/previews/jedziemy-2-420.webp",
+        "width": 600,
+        "height": 1304,
+        "alt": "Jedziemy driving theory practice session",
+        "caption": "Practice session"
+      },
+      {
+        "src": "/assets/apps/previews/jedziemy-3-800.webp",
+        "small": "/assets/apps/previews/jedziemy-3-420.webp",
+        "width": 600,
+        "height": 1304,
+        "alt": "Jedziemy driving theory question with answer feedback",
+        "caption": "Answer feedback"
+      }
+    ],
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/pl/app/jedziemy-grafik-jazd/id6825823809",
+        "kind": "store",
+        "platform": "ios"
+      },
+      {
+        "label": "Website",
+        "url": "https://jedziemy.app",
+        "kind": "website",
+        "platform": "web"
+      }
+    ],
+    "facts": [
+      [
+        "For",
+        "Driving schools, instructors and students"
+      ],
+      [
+        "Access",
+        "Office dashboard and mobile app"
+      ],
+      [
+        "Co-founders",
+        "Mikołaj Piech and Marcel Chudyba"
+      ]
+    ],
+    "caseStudy": "https://mikolajpiech.com/projects/jedziemy",
+    "authors": [
+      {
+        "@id": "https://mikolajpiech.com/#person"
+      },
+      {
+        "@type": "Person",
+        "name": "Marcel Chudyba"
+      }
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://jedziemy.app/#organization",
+      "name": "Jedziemy",
+      "url": "https://jedziemy.app/"
+    },
+    "region": "PL"
+  },
+  {
+    "id": "subby",
+    "name": "Subby",
+    "status": "live",
+    "category": "Money",
+    "platforms": "iOS & Android",
+    "operatingSystem": "iOS, Android",
+    "schemaCategory": "FinanceApplication",
+    "path": "/apps/subby/",
+    "icon": "/assets/apps/subby-icon-160.webp",
+    "headline": "Catch the charge before it happens.",
+    "description": "Keep subscriptions, free trials and renewal dates in view. Get a reminder before the next charge and see what your subscriptions cost over time.",
+    "shortDescription": "Get reminded before a free trial turns into another charge.",
+    "previewStyle": "subby",
+    "screenshots": [
+      {
+        "src": "/assets/apps/previews/subby-1-800.webp",
+        "small": "/assets/apps/previews/subby-1-420.webp",
+        "width": 800,
+        "height": 1731,
+        "alt": "Subby dashboard with monthly spending, active free trials and upcoming payments",
+        "caption": "See what renews next"
+      },
+      {
+        "src": "/assets/apps/gallery/subby-2.webp",
+        "width": 800,
+        "height": 1731,
+        "alt": "Subby subscription list with renewal dates and monthly totals",
+        "caption": "All your subscriptions"
+      },
+      {
+        "src": "/assets/apps/gallery/subby-3.webp",
+        "width": 800,
+        "height": 1731,
+        "alt": "Subby spending chart showing subscription costs by category",
+        "caption": "Know where your money goes"
+      }
+    ],
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/subby-subscription-manager/id6755717606",
+        "kind": "store",
+        "platform": "ios"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.justgoodapps.subby",
+        "kind": "store",
+        "platform": "android"
+      }
+    ],
+    "facts": [
+      [
+        "Available on",
+        "iOS and Android"
+      ],
+      [
+        "Purchases",
+        "Optional in-app subscription"
+      ],
+      [
+        "Getting started",
+        "No account or bank connection needed for manual tracking"
+      ]
+    ],
+    "features": [
+      [
+        "A heads-up before renewals",
+        "Set reminders for subscription renewals and free trials before they become another charge."
+      ],
+      [
+        "A clear spending overview",
+        "See monthly and yearly totals, category breakdowns and the services costing the most."
+      ],
+      [
+        "Start with manual tracking",
+        "Add subscriptions yourself. Connecting a bank is not required to keep track of renewal dates."
+      ]
+    ],
+    "label": "Subscription tracker"
+  },
+  {
+    "id": "twojasiec",
+    "name": "Twoja Sieć",
+    "status": "live",
+    "category": "Local life",
+    "platforms": "Web, iOS & Android",
+    "operatingSystem": "Web, iOS, Android",
+    "schemaCategory": "NewsApplication",
+    "path": "/twojasiec",
+    "icon": "/assets/apps/twojasiec-icon-160.webp",
+    "headline": "What’s happening, close to home.",
+    "description": "Find local news, alerts and events in Poland without jumping between scattered websites and community groups.",
+    "shortDescription": "Find local news, alerts and events without the endless searching.",
+    "previewStyle": "twojasiec",
+    "language": "pl",
+    "screenshots": [
+      {
+        "src": "/assets/apps/previews/twojasiec-1-800.webp",
+        "small": "/assets/apps/previews/twojasiec-1-420.webp",
+        "width": 589,
+        "height": 1280,
+        "alt": "Twoja Sieć local news feed with stories from the selected area",
+        "caption": "Local news in one place",
+        "altPl": "Strumień lokalnych wiadomości z wybranej okolicy w aplikacji Twoja Sieć",
+        "captionPl": "Lokalne wiadomości w jednym miejscu"
+      },
+      {
+        "src": "/assets/apps/previews/twojasiec-2-800.webp",
+        "small": "/assets/apps/previews/twojasiec-2-420.webp",
+        "width": 589,
+        "height": 1280,
+        "alt": "Twoja Sieć local events feed",
+        "caption": "See what’s coming up",
+        "altPl": "Nadchodzące wydarzenia z okolicy w aplikacji Twoja Sieć",
+        "captionPl": "Sprawdź nadchodzące wydarzenia"
+      },
+      {
+        "src": "/assets/apps/previews/twojasiec-3-800.webp",
+        "width": 589,
+        "height": 1280,
+        "alt": "Twoja Sieć alerts for the selected area",
+        "caption": "Keep up with local alerts",
+        "altPl": "Lokalne alerty i komunikaty w aplikacji Twoja Sieć",
+        "captionPl": "Bądź na bieżąco z alertami"
+      }
+    ],
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/pl/app/twoja-sie%C4%87-lokalne-informacje/id6804251687",
+        "kind": "store",
+        "platform": "ios"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=pl.twojasiec.app",
+        "kind": "store",
+        "platform": "android"
+      },
+      {
+        "label": "Open Twoja Sieć",
+        "url": "https://twojasiec.app/",
+        "kind": "website",
+        "platform": "web"
+      }
+    ],
+    "facts": [
+      [
+        "Dostępność",
+        "Internet, iOS i Android"
+      ],
+      [
+        "Na początek",
+        "Przeglądaj lokalne informacje na twojasiec.app"
+      ],
+      [
+        "Dla kogo",
+        "Dla osób szukających lokalnych informacji w Polsce"
+      ]
+    ],
+    "features": [
+      [
+        "Wiadomości z Twojej okolicy",
+        "Przeglądaj lokalne informacje w jednym miejscu zamiast szukać ich na wielu stronach."
+      ],
+      [
+        "Alerty i wydarzenia",
+        "Sprawdzaj ważne komunikaty i nadchodzące wydarzenia w wybranej okolicy."
+      ],
+      [
+        "Zapisuj to, co ważne",
+        "Wracaj do zapisanych informacji i dodawaj interesujące wydarzenia do kalendarza."
+      ]
+    ],
+    "caseStudy": "https://mikolajpiech.com/pl/projects/twojasiec",
+    "headlinePl": "To, co ważne, blisko Ciebie.",
+    "descriptionPl": "Wiadomości, alerty i wydarzenia z Twojej okolicy w jednym miejscu. Sprawdzaj lokalne informacje bez przeglądania wielu stron i rozproszonych grup.",
+    "platformsPl": "Internet, iOS i Android",
+    "label": "Local news",
+    "region": "PL"
+  },
+  {
+    "id": "trailo",
+    "name": "Trailo",
+    "status": "live",
+    "category": "Travel",
+    "platforms": "iOS, Android & Web",
+    "operatingSystem": "Web, iOS, Android",
+    "schemaCategory": "TravelApplication",
+    "path": "/apps/trailo/",
+    "icon": "/assets/apps/trailo-icon-160.webp",
+    "headline": "Your whole trip, in one place.",
+    "description": "Bring flights, stays and each day’s itinerary together, so you can spend less time planning and more time exploring.",
+    "shortDescription": "Keep flights, stays and each day’s plan together.",
+    "previewStyle": "trailo",
+    "screenshots": [
+      {
+        "src": "/assets/apps/previews/trailo-1-800.webp",
+        "small": "/assets/apps/previews/trailo-1-420.webp",
+        "width": 800,
+        "height": 1731,
+        "alt": "Trailo daily itinerary with a map of Rome and scheduled activities",
+        "caption": "Your day, mapped out"
+      },
+      {
+        "src": "/assets/apps/gallery/trailo-2.webp",
+        "width": 800,
+        "height": 1731,
+        "alt": "Trailo trip overview with flight details and a day-by-day itinerary",
+        "caption": "Flights and the daily plan"
+      },
+      {
+        "src": "/assets/apps/gallery/trailo-3.webp",
+        "width": 800,
+        "height": 1731,
+        "alt": "Trailo planning screen with attraction and ticket details",
+        "caption": "Places and tickets"
+      },
+      {
+        "src": "/assets/apps/gallery/trailo-4.webp",
+        "width": 800,
+        "height": 1731,
+        "alt": "Trailo trip budget overview",
+        "caption": "Keep the budget in view"
+      }
+    ],
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/us/app/trailo-ai-trip-planner/id6767237924",
+        "kind": "store",
+        "platform": "ios"
+      },
+      {
+        "label": "Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.justgoodapps.trailo",
+        "kind": "store",
+        "platform": "android"
+      },
+      {
+        "label": "Visit Trailo",
+        "url": "https://trailoapp.com",
+        "kind": "website",
+        "platform": "web"
+      }
+    ],
+    "facts": [
+      [
+        "Available on",
+        "iOS, Android and the web"
+      ],
+      [
+        "Getting started",
+        "Create an account to plan a trip"
+      ],
+      [
+        "Plans",
+        "Current plans and pricing on Trailo’s website"
+      ]
+    ],
+    "features": [
+      [
+        "A plan that fits the day",
+        "Keep activities, routes and travel times together in a day-by-day itinerary."
+      ],
+      [
+        "Change plans as you go",
+        "Ask for changes to your trip instead of rebuilding the itinerary from scratch."
+      ],
+      [
+        "Take it with you",
+        "Open your trip on the web or on your phone before and during your travels."
+      ]
+    ],
+    "label": "Trip planner"
+  },
+  {
+    "id": "doso",
+    "name": "Doso",
+    "status": "live",
+    "category": "Daily health",
+    "platforms": "iOS",
+    "operatingSystem": "iOS",
+    "schemaCategory": "HealthApplication",
+    "path": "/apps/doso/",
+    "icon": "/assets/apps/previews/doso-icon-160.webp",
+    "headline": "Know what to take, and when.",
+    "description": "Keep medication schedules, recorded doses and refills in one clear daily plan. Use it offline, or choose Connected Family to coordinate care with someone you trust.",
+    "shortDescription": "Keep doses, reminders and refills in one daily plan.",
+    "previewStyle": "doso",
+    "screenshots": [
+      {
+        "src": "/assets/apps/previews/doso-1-800.webp",
+        "small": "/assets/apps/previews/doso-1-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Doso Today screen showing the next medication dose and scheduled doses",
+        "caption": "Know what comes next"
+      },
+      {
+        "src": "/assets/apps/previews/doso-2-800.webp",
+        "small": "/assets/apps/previews/doso-2-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Doso medication list with schedules, remaining tablets and refill forecasts",
+        "caption": "Stay ahead of refills"
+      },
+      {
+        "src": "/assets/apps/previews/doso-3-800.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Doso dose history showing taken and skipped medication records",
+        "caption": "Look back at your routine"
+      },
+      {
+        "src": "/assets/apps/previews/doso-4-800.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Doso Connected Family screen with household profiles and caregiver access",
+        "caption": "Coordinate care"
+      },
+      {
+        "src": "/assets/apps/previews/doso-5-800.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Doso medication editor with flexible schedules and refill reminder settings",
+        "caption": "Make the schedule fit"
+      }
+    ],
+    "links": [
+      {
+        "label": "App Store",
+        "url": "https://apps.apple.com/app/doso-pill-reminder-tracker/id6761341859",
+        "kind": "store",
+        "platform": "ios"
+      }
+    ],
+    "facts": [
+      [
+        "Free to use",
+        "Medication entry and flexible reminders"
+      ],
+      [
+        "Optional upgrade",
+        "Doso Plus for refill forecasts, longer history and reports"
+      ],
+      [
+        "Your routine",
+        "Works offline; an account is needed for Connected Family"
+      ]
+    ],
+    "features": [
+      [
+        "One daily medication plan",
+        "See scheduled doses, record what you have taken and look back at your dose history."
+      ],
+      [
+        "Refills and flexible schedules",
+        "Doso Plus adds refill forecasts and taper plans, alongside longer history and PDF reports."
+      ],
+      [
+        "Care, together",
+        "Keep separate profiles and use optional Connected Family sharing to coordinate medication routines with trusted caregivers."
+      ]
+    ],
+    "note": "Doso helps organize medication routines. It does not diagnose, prescribe or replace advice from a qualified healthcare professional.",
+    "label": "Medication reminders"
+  },
+  {
+    "id": "solvee",
+    "name": "Solvee",
+    "status": "acquired",
+    "statusLabel": "Acquired · 2026",
+    "category": "Education",
+    "platforms": "iOS & Android · historical project",
+    "operatingSystem": "iOS, Android",
+    "schemaCategory": "EducationalApplication",
+    "path": "/apps/solvee/",
+    "icon": "/assets/apps/solvee-icon-160.webp",
+    "headline": "From a question to an explanation.",
+    "description": "Solvee turned photos of homework problems into step-by-step explanations. I built and grew it to more than 25,000 downloads before selling it in 2026.",
+    "shortDescription": "A homework helper that reached 25,000+ downloads before being acquired.",
+    "previewStyle": "solvee",
+    "screenshots": [
+      {
+        "src": "/assets/apps/solvee.webp",
+        "width": 314,
+        "height": 679,
+        "alt": "Original Solvee App Store screenshot showing the exercise camera",
+        "caption": "Original store screenshot · scan a problem"
+      },
+      {
+        "src": "/assets/apps/gallery/solvee-2.webp",
+        "width": 314,
+        "height": 679,
+        "alt": "Original Solvee App Store screenshot showing step-by-step explanations",
+        "caption": "Original store screenshot · follow the explanation"
+      },
+      {
+        "src": "/assets/apps/gallery/solvee-3.webp",
+        "width": 314,
+        "height": 679,
+        "alt": "Original Solvee App Store screenshot showing learning tools",
+        "caption": "Original store screenshot · learning tools"
+      }
+    ],
+    "links": [],
+    "facts": [
+      [
+        "Status",
+        "Acquired in 2026"
+      ],
+      [
+        "Before acquisition",
+        "More than 25,000 downloads"
+      ],
+      [
+        "This page",
+        "An archive of the product I built"
+      ]
+    ],
+    "features": [
+      [
+        "Start with a photo",
+        "Students could photograph or type a school problem to begin."
+      ],
+      [
+        "Follow the explanation",
+        "The app broke answers into steps, with follow-up questions and practice tools."
+      ],
+      [
+        "Built, grown and sold",
+        "Solvee was Clevr Apps’ first acquired product. Its original screenshots are preserved here."
+      ]
+    ],
+    "note": "This is a historical project. Solvee is no longer published or supported by Clevr Apps.",
+    "caseStudy": "https://mikolajpiech.com/projects/solvee"
+  },
+  {
+    "id": "charmy-books",
+    "name": "Charmy Books",
+    "status": "paused",
+    "statusLabel": "On hold",
+    "category": "Personalized books",
+    "platforms": "Web project",
+    "operatingSystem": "Web",
+    "schemaCategory": "EntertainmentApplication",
+    "path": "/apps/charmy-books/",
+    "icon": "/assets/apps/charmy-icon.webp",
+    "headline": "A story with your child at its heart.",
+    "description": "An exploration of personalized illustrated books, with stories shaped around a child’s imagination and family. Development is currently on hold.",
+    "shortDescription": "Personalized illustrated books for children. Development is on hold.",
+    "previewStyle": "charmy",
+    "screenshotType": "website",
+    "screenshots": [
+      {
+        "src": "/assets/apps/previews/charmy-1-1200.webp",
+        "small": "/assets/apps/previews/charmy-1-600.webp",
+        "width": 1200,
+        "height": 556,
+        "alt": "Historical book creator screen from the Charmy Books project, using its earlier JustMine name",
+        "caption": "Historical creator screen · earlier JustMine branding"
+      },
+      {
+        "src": "/assets/apps/previews/charmy-2-1200.webp",
+        "width": 1200,
+        "height": 591,
+        "alt": "Historical Charmy Books project website under its earlier JustMine name",
+        "caption": "Historical website · earlier JustMine branding"
+      }
+    ],
+    "links": [],
+    "facts": [
+      [
+        "Status",
+        "Development on hold"
+      ],
+      [
+        "Format",
+        "Web application"
+      ],
+      [
+        "Preview",
+        "Historical screens; earlier JustMine branding"
+      ]
+    ],
+    "features": [
+      [
+        "A personal story brief",
+        "The creator explored a child’s interests, family and story ideas."
+      ],
+      [
+        "Illustrated stories",
+        "The project combined a personalized story with a consistent illustrated world."
+      ],
+      [
+        "Currently paused",
+        "This page preserves the project’s work. No launch date is announced."
+      ]
+    ],
+    "note": "Development is on hold. These historical screenshots show an earlier version of the project under the JustMine name."
+  },
+  {
+    "id": "arie",
+    "name": "Arie",
+    "status": "paused",
+    "statusLabel": "On hold",
+    "category": "Phone assistant",
+    "platforms": "Android prototype",
+    "operatingSystem": "Android",
+    "schemaCategory": "UtilitiesApplication",
+    "path": "/apps/arie/",
+    "icon": "/assets/apps/arie-icon-160.webp",
+    "headline": "Everyday tasks, through voice.",
+    "description": "An Android prototype for carrying out everyday phone tasks through spoken or typed instructions. Work on the project is currently paused.",
+    "shortDescription": "An experimental phone assistant. Development is on hold.",
+    "previewStyle": "arie",
+    "screenshotType": "website",
+    "screenshots": [
+      {
+        "src": "/assets/apps/previews/arie-1-1200.webp",
+        "small": "/assets/apps/previews/arie-1-600.webp",
+        "width": 1200,
+        "height": 675,
+        "alt": "Archived Arie website showing its original illustrative phone assistant demo",
+        "caption": "Archived website · illustrative demo, not a released app"
+      }
+    ],
+    "links": [],
+    "facts": [
+      [
+        "Status",
+        "Development on hold"
+      ],
+      [
+        "Prototype",
+        "Android"
+      ],
+      [
+        "Availability",
+        "No public download or release date"
+      ]
+    ],
+    "features": [
+      [
+        "Tasks through voice",
+        "The prototype explored handling everyday phone tasks through spoken or typed instructions."
+      ],
+      [
+        "An Android experiment",
+        "The project investigated native phone integrations and on-device actions."
+      ]
+    ],
+    "note": "Historical website preview, including an illustrative demo. Arie is on hold and has no public download."
+  }
+]

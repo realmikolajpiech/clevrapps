@@ -1,274 +1,80 @@
-/* The homepage is an app directory. Product detail lives one level deeper. */
-.studio-home {
-  background: #fff;
-  --paper: #fff;
-  --ink: #242526;
-  --muted: #727577;
-  --line: #ebeded;
-}
-.studio-home main,
-.studio-home .site-header,
-.directory-footer {
+.studio-home main, .studio-home .site-header, .directory-footer {
   width: min(1000px, calc(100% - 96px));
   margin-inline: auto;
 }
-.studio-home .site-header {
-  min-height: 100px;
-  border: 0;
-}
-.studio-home .brand {
-  font-size: 24px;
-  gap: 10px;
-}
-.studio-home .site-nav {
-  gap: 32px;
-  font-size: 13px;
-  color: #5b5f61;
-}
-.studio-home .site-nav a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-}
-.directory-intro {
-  padding: 64px 0 58px;
-}
-.directory-intro h1 {
-  font-size: clamp(44px, 5vw, 64px);
-  line-height: 1.1;
-  letter-spacing: -2.8px;
-  font-weight: 500;
-}
-.directory-intro h1 a {
-  color: #8a8e8f;
-}
-.directory-intro h1 a:hover {
-  color: var(--ink);
-}
-.directory-intro h1 a span {
-  display: inline-block;
-  font-size: 0.46em;
-  vertical-align: 0.2em;
-  margin-left: 16px;
-  font-weight: 400;
-}
-.directory-intro > p {
-  margin-top: 25px;
-  color: #686d6f;
-  font-size: 16px;
-  line-height: 1.65;
-}
-.directory-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-.directory-app {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  row-gap: 20px;
-  padding: 30px;
-  background: #f7f8f8;
-  border-radius: 16px;
-  min-height: 240px;
-  color: var(--ink);
-}
-.directory-app-header {
-  display: grid;
-  grid-template-columns: 60px minmax(0, 1fr);
-  gap: 18px;
-  align-items: center;
-}
-.directory-app-header > img {
-  width: 60px;
-  height: 60px;
-  border-radius: 14px;
-}
-.directory-app h3 {
-  font-size: 23px;
-  line-height: 1.25;
-  letter-spacing: -0.6px;
-  font-weight: 550;
-}
-.directory-app-title > span {
-  display: block;
-  font-size: 12px;
-  color: #73787a;
-  margin-top: 6px;
-}
-.directory-app > p {
-  font-size: 15px;
-  color: #656b6d;
-  line-height: 1.6;
-  max-width: 35ch;
-}
-.directory-app-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-}
-.directory-app-actions a {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 36px;
-  padding: 8px 12px;
-  border: 1px solid #dfe2e2;
-  border-radius: 8px;
-  background: #fff;
-  color: #45494b;
-  font-size: 12px;
-  font-weight: 550;
-  line-height: 1;
-}
-.directory-app-actions a:hover {
-  border-color: #c9cdcd;
-  background: #eff1f1;
-  color: var(--ink);
-  transform: translateY(-1px);
-}
-.directory-app-actions a:active {
-  transform: translateY(1px) scale(0.98);
-}
-.directory-app-actions span {
-  color: #8a8e8f;
-  transition: transform 0.2s var(--ease);
-}
-.directory-app-actions a:hover span {
-  transform: translate(1px, -1px);
-}
-.directory-app-actions a[href^="apps/"]:hover span {
-  transform: translateX(2px);
-}
-
-.directory-contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 56px 0;
-}
-.directory-contact h2 {
-  font-size: 19px;
-  letter-spacing: -0.3px;
-  font-weight: 500;
-}
-.directory-contact p {
-  margin-top: 7px;
-  color: #787d7e;
-  font-size: 13px;
-}
-.directory-contact > a {
-  font-size: 16px;
-  white-space: nowrap;
-}
-.directory-contact > a span {
-  margin-left: 18px;
-  color: #8a8e8f;
-}
-.directory-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 24px 0 30px;
-  border-top: 1px solid var(--line);
-  font-size: 11px;
-  color: #787d7e;
-}
-.directory-footer > div {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
+.studio-home .site-header { min-height: 90px; border: 0; }
+.studio-home .brand { font-size: 24px; gap: 10px; }
+.studio-home .brand-icon { width: 32px; height: 32px; }
+.studio-home .site-nav { gap: 28px; font-size: 12px; color: #62696c; }
+.studio-home .site-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.directory-intro { padding: 38px 0 46px; }
+.directory-intro h1 { font-size: clamp(40px, 4.6vw, 58px); line-height: 1.1; letter-spacing: -.05em; font-weight: 500; }
+.directory-intro h1 a { color: #777e80; }
+.directory-intro h1 a:hover { color: var(--ink); }
+.directory-intro h1 a span { font-size: .45em; vertical-align: .3em; margin-left: 8px; }
+.directory-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 24px; }
+.app-card { min-width: 0; }
+.app-identity { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.app-identity > img { width: 42px; height: 42px; border-radius: 10px; }
+.app-identity h3 { font-size: 21px; font-weight: 500; line-height: 1.2; letter-spacing: -.5px; }
+.app-identity p { margin-top: 4px; font-size: 12px; color: #687074; }
+.app-preview { position: relative; display: block; height: 280px; overflow: hidden; border-radius: 14px; background: #eef1ef; }
+.preview-trailo { background: #e8efec; }
+.preview-jedziemy { background: #edf0f8; }
+.preview-subby { background: #eeebf3; }
+.preview-doso { background: #edf1e9; }
+.preview-twojasiec { background: #e9eef4; }
+.preview-arie { background: #141a21; }
+.preview-charmy { background: #f2ede5; }
+.preview-captures { display: flex; align-items: flex-start; justify-content: center; gap: 18px; height: 100%; padding: 24px 22px 0; transition: transform .25s var(--ease); }
+.screen-capture { flex: 0 0 auto; width: 41%; max-width: 190px; height: auto; border-radius: 19px; border: 1px solid rgb(36 37 38 / .08); }
+.screen-capture:nth-child(2) { margin-top: 28px; }
+.app-preview:hover .preview-captures { transform: translateY(-3px); }
+.app-preview:active { transform: none; }
+.app-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-top: 14px; }
+.app-identity h3 a:hover, .archive-body a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.directory-archive { margin-top: 34px; border-top: 1px solid var(--line); }
+.directory-archive > summary { display: flex; align-items: center; justify-content: space-between; min-height: 58px; list-style: none; cursor: pointer; font-size: 13px; color: #646d70; }
+.directory-archive > summary::-webkit-details-marker { display: none; }
+.directory-archive > summary span { font-size: 19px; font-weight: 400; transition: transform .2s; }
+.directory-archive[open] > summary span { transform: rotate(45deg); }
+.archive-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 4px 0 25px; }
+.archive-card { position: relative; min-width: 0; }
+.legacy-project-anchor { position: absolute; top: 0; }
+.archive-card .app-preview { height: 140px; border-radius: 10px; }
+.archive-card .preview-captures { padding: 16px 12px 0; }
+.archive-card .screen-capture { width: 110px; border-radius: 9px; }
+.preview-website .preview-captures { align-items: center; padding: 10px; }
+.preview-website .screen-capture { width: 100%; max-width: none; border-radius: 4px; }
+.archive-body { padding-top: 12px; }
+.archive-body h3 { font-size: 16px; font-weight: 500; letter-spacing: -.3px; }
+.archive-body p { margin-top: 4px; font-size: 11px; color: #687074; }
+.directory-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 24px; padding: 12px 0 24px; border-top: 1px solid var(--line); font-size: 11px; color: #687074; }
+.directory-footer > div { display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px; }
+.directory-footer a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; }
 @media (max-width: 767px) {
-  .studio-home main,
-  .studio-home .site-header,
-  .directory-footer {
-    width: calc(100% - 40px);
-  }
-  .studio-home .site-header {
-    min-height: 82px;
-  }
-  .studio-home .brand {
-    font-size: 22px;
-  }
-  .studio-home .site-nav {
-    gap: 22px;
-    font-size: 12px;
-  }
-  .directory-intro {
-    padding: 36px 0 36px;
-  }
-  .directory-intro h1 {
-    font-size: clamp(40px, 8vw, 58px);
-    letter-spacing: -1.8px;
-  }
-  .directory-intro h1 a span {
-    margin-left: 12px;
-  }
-  .directory-intro > p {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  .directory-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .directory-app {
-    min-height: 218px;
-    padding: 25px;
-    row-gap: 18px;
-    border-radius: 14px;
-  }
-  .directory-app-header {
-    grid-template-columns: 52px minmax(0, 1fr);
-    gap: 15px;
-  }
-  .directory-app-header > img {
-    width: 52px;
-    height: 52px;
-    border-radius: 12px;
-  }
-  .directory-app h3 {
-    font-size: 21px;
-  }
-  .directory-app-title > span {
-    font-size: 11px;
-  }
-  .directory-app > p {
-    font-size: 14px;
-    max-width: 34ch;
-  }
-  .directory-app-actions a {
-    min-height: 38px;
-    padding-inline: 13px;
-  }
-
-  .directory-contact {
-    display: block;
-    padding: 38px 0;
-  }
-  .directory-contact > a {
-    display: inline-flex;
-    margin-top: 19px;
-    font-size: 16px;
-  }
-  .directory-contact h2 {
-    font-size: 18px;
-  }
-  .directory-footer {
-    font-size: 10px;
-    gap: 15px;
-    padding-bottom: 24px;
-  }
-  .directory-footer > div {
-    gap: 16px;
-  }
-}
-
-.studio-home .brand-icon {
-  width: 32px;
-  height: 32px;
+  .studio-home main, .studio-home .site-header, .directory-footer { width: calc(100% - 40px); }
+  .studio-home .site-header { min-height: 78px; gap: 16px; }
+  .studio-home .brand { font-size: 21px; gap: 8px; }
+  .studio-home .brand-icon { width: 29px; height: 29px; }
+  .studio-home .site-nav { gap: 22px; font-size: 11px; }
+  .directory-intro { padding: 25px 0 34px; }
+  .directory-intro h1 { font-size: clamp(34px, 9.5vw, 52px); }
+  .directory-grid { grid-template-columns: 1fr; gap: 27px; }
+  .app-identity { margin-bottom: 14px; }
+  .app-identity h3 { font-size: 20px; }
+  .app-preview { height: clamp(250px, 75vw, 340px); }
+  .preview-captures { padding: 22px 18px 0; gap: 16px; }
+  .screen-capture { width: 43%; }
+  .directory-archive { margin-top: 25px; }
+  .archive-grid { gap: 17px; }
+  .archive-card .app-preview { height: 105px; }
+  .archive-card .preview-captures { padding: 10px 7px 0; }
+  .archive-card .screen-capture { width: 70px; }
+  .archive-card .preview-website .preview-captures { padding: 6px; }
+  .archive-card .preview-website .screen-capture { width: 100%; }
+  .archive-body h3 { font-size: 14px; }
+  .archive-body p { font-size: 10px; }
+  .directory-footer { font-size: 10px; padding-bottom: 20px; }
+  .directory-footer > div { gap: 0 22px; }
 }

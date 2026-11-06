@@ -1,23 +1,28 @@
 # Clevr Apps
 
-> Clevr Apps is the independent product studio founded and run by Mikołaj Piech. It publishes apps for iOS, Android, and the web. The website provides product information, download links, and support.
+> Clevr Apps is the independent app studio run by Mikołaj Piech. The website provides real product previews, features, download links, support, and a clearly labeled project archive.
 
 ## Identity
 
 - Studio: https://clevrapps.com/
 - Founder: Mikołaj Piech
-- Founder profile: https://mikolajpiech.com/
-- Contact: mikolaj@clevrapps.com
+- Founder profile and project stories: https://mikolajpiech.com/
+- Support: mikolaj@clevrapps.com
 
-## Products
+## Available products
 
-- [Trailo](https://clevrapps.com/apps/trailo/): AI travel planner for web, iOS, and Android
-- [Subby](https://clevrapps.com/apps/subby/): subscription manager for iOS and Android
-- [Doso](https://clevrapps.com/apps/doso/): personal health app for iOS
-- [Charmy Books](https://charmybooks.com/): personalized illustrated books for children
-- [Solvee](https://clevrapps.com/apps/solvee/): acquired AI homework helper that reached 25,000+ downloads
-- [Twoja Sieć](https://clevrapps.com/twojasiec): local news, alerts, and events app for iOS and Android
+- [Jedziemy](https://clevrapps.com/apps/jedziemy/): driving school platform co-founded by Mikołaj Piech and Marcel Chudyba; a separate venture published by Jedziemy; available in Poland only, on the web and the App Store
+- [Subby](https://clevrapps.com/apps/subby/): subscription and renewal tracking for iOS and Android
+- [Twoja Sieć](https://clevrapps.com/twojasiec): local news, alerts and events in Poland, on the web, iOS and Android; available in Poland only
+- [Trailo](https://clevrapps.com/apps/trailo/): travel planning for web, iOS and Android
+- [Doso](https://clevrapps.com/apps/doso/): medication schedules, recorded doses and refills for iOS; optional Connected Family sharing
 
-## Ownership and publishing
+## Historical projects
 
-Clevr Apps is a product studio brand operated by its founder, Mikołaj Piech. Product pages describe the apps; mikolajpiech.com is the founder's portfolio and personal website, with selected work, project details, and contact information.
+- [Solvee](https://clevrapps.com/apps/solvee/): acquired in 2026 after more than 25,000 downloads; no longer published or supported by Clevr Apps
+- [Charmy Books](https://clevrapps.com/apps/charmy-books/): personalized illustrated books; development on hold, with no announced launch date
+- [Arie](https://clevrapps.com/apps/arie/): experimental Android phone assistant; development on hold, with no public download or release date
+
+## Roles and ownership
+
+Clevr Apps is a developer brand operated by Mikołaj Piech. Product pages help people evaluate and use an app. mikolajpiech.com contains personal background and project stories. Paused and acquired projects are archives, not current download offers. Archived Charmy Books screenshots show earlier JustMine branding; Arie's screenshot is of its historical website and illustrative demo, not a released application.

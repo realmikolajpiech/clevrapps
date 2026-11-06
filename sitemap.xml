@@ -1,63 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://clevrapps.com/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/apps/jedziemy/</loc>
+    <lastmod>2026-11-06</lastmod>
     <image:image>
-      <image:loc>https://clevrapps.com/assets/og-image.png</image:loc>
-      <image:title>Clevr Apps — Apps by Mikołaj Piech</image:title>
+      <image:loc>https://clevrapps.com/assets/apps/previews/jedziemy-1-800.webp</image:loc>
+      <image:title>Theory course</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/jedziemy-2-800.webp</image:loc>
+      <image:title>Practice session</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/jedziemy-3-800.webp</image:loc>
+      <image:title>Answer feedback</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/apps/subby/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/subby-1-800.webp</image:loc>
+      <image:title>See what renews next</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/gallery/subby-2.webp</image:loc>
+      <image:title>All your subscriptions</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/gallery/subby-3.webp</image:loc>
+      <image:title>Know where your money goes</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/twojasiec</loc>
+    <lastmod>2026-11-06</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/twojasiec-1-800.webp</image:loc>
+      <image:title>Local news in one place</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/twojasiec-2-800.webp</image:loc>
+      <image:title>See what’s coming up</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/twojasiec-3-800.webp</image:loc>
+      <image:title>Keep up with local alerts</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/apps/trailo/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <image:image>
-      <image:loc>https://clevrapps.com/assets/apps/trailo-800.webp</image:loc>
-      <image:title>Trailo AI travel planner</image:title>
+      <image:loc>https://clevrapps.com/assets/apps/previews/trailo-1-800.webp</image:loc>
+      <image:title>Your day, mapped out</image:title>
     </image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/trailo-2.webp</image:loc><image:title>Trailo trip overview</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/trailo-3.webp</image:loc><image:title>Trailo ticket planning</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/trailo-4.webp</image:loc><image:title>Trailo trip budget</image:title></image:image>
-  </url>
-  <url>
-    <loc>https://clevrapps.com/apps/subby/</loc>
-    <lastmod>2026-09-03</lastmod>
     <image:image>
-      <image:loc>https://clevrapps.com/assets/apps/subby-800.webp</image:loc>
-      <image:title>Subby subscription manager</image:title>
+      <image:loc>https://clevrapps.com/assets/apps/gallery/trailo-2.webp</image:loc>
+      <image:title>Flights and the daily plan</image:title>
     </image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/subby-2.webp</image:loc><image:title>Subby subscriptions and renewals</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/subby-3.webp</image:loc><image:title>Subby spending analytics</image:title></image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/gallery/trailo-3.webp</image:loc>
+      <image:title>Places and tickets</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/gallery/trailo-4.webp</image:loc>
+      <image:title>Keep the budget in view</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/apps/doso/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <image:image>
-      <image:loc>https://clevrapps.com/assets/apps/doso-800.webp</image:loc>
-      <image:title>Doso medication and health tracker</image:title>
+      <image:loc>https://clevrapps.com/assets/apps/previews/doso-1-800.webp</image:loc>
+      <image:title>Know what comes next</image:title>
     </image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-2.webp</image:loc><image:title>Doso lab result analysis</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-3.webp</image:loc><image:title>Doso medication interaction warning</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-4.webp</image:loc><image:title>Doso voice medication entry</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/doso-5.webp</image:loc><image:title>Doso family health profiles</image:title></image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/doso-2-800.webp</image:loc>
+      <image:title>Stay ahead of refills</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/doso-3-800.webp</image:loc>
+      <image:title>Look back at your routine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/doso-4-800.webp</image:loc>
+      <image:title>Coordinate care</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/doso-5-800.webp</image:loc>
+      <image:title>Make the schedule fit</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://clevrapps.com/apps/solvee/</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <image:image>
       <image:loc>https://clevrapps.com/assets/apps/solvee.webp</image:loc>
-      <image:title>Solvee AI homework helper</image:title>
+      <image:title>Original store screenshot · scan a problem</image:title>
     </image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/solvee-2.webp</image:loc><image:title>Solvee step-by-step explanations</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/solvee-3.webp</image:loc><image:title>Solvee literature analysis</image:title></image:image>
-    <image:image><image:loc>https://clevrapps.com/assets/apps/gallery/solvee-4.webp</image:loc><image:title>Solvee AI tools</image:title></image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/gallery/solvee-2.webp</image:loc>
+      <image:title>Original store screenshot · follow the explanation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/gallery/solvee-3.webp</image:loc>
+      <image:title>Original store screenshot · learning tools</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://clevrapps.com/twojasiec</loc>
-    <lastmod>2026-09-03</lastmod>
+    <loc>https://clevrapps.com/apps/charmy-books/</loc>
+    <lastmod>2026-11-06</lastmod>
     <image:image>
-      <image:loc>https://clevrapps.com/assets/apps/twojasiec/screenshot.jpeg</image:loc>
-      <image:title>Twoja Sieć — lokalne wiadomości, alerty i wydarzenia</image:title>
+      <image:loc>https://clevrapps.com/assets/apps/previews/charmy-1-1200.webp</image:loc>
+      <image:title>Historical creator screen · earlier JustMine branding</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/charmy-2-1200.webp</image:loc>
+      <image:title>Historical website · earlier JustMine branding</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://clevrapps.com/apps/arie/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <image:image>
+      <image:loc>https://clevrapps.com/assets/apps/previews/arie-1-1200.webp</image:loc>
+      <image:title>Archived website · illustrative demo, not a released app</image:title>
     </image:image>
   </url>
   <url>
@@ -70,7 +142,7 @@
   </url>
   <url>
     <loc>https://clevrapps.com/privacy.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
     <loc>https://clevrapps.com/zielonka/privacy-policy</loc>
