@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://clevrapps.com"
-VERSION = "20261106-poland"
+VERSION = "20261106-details"
 UPDATED = "2026-11-06"
 APPS = json.loads((ROOT / "data/apps.json").read_text())
 
@@ -211,7 +211,7 @@ def build_product(app):
       <section class="product-overview" aria-labelledby="product-title"><div class="product-heading"><div class="product-identity"><img src="{e(app["icon"])}" alt="" width="64" height="64" /><div><h1 id="product-title">{e(app["name"])}</h1><p>{e(app.get("platformsPl", app["platforms"]) if pl else app["platforms"])}{region_badge(app, pl=pl)}</p></div></div><div class="product-actions">{actions}{status}</div></div><p class="product-summary">{e(summary)}</p></section>
       {note if app["status"] != "live" else ""}
       <section class="product-gallery{gallery_type}" aria-label="{"Zrzuty ekranu" if pl else "Screenshots"}" tabindex="0">{gallery}</section>
-      <details class="product-details" id="app-story"><summary>{"Szczegóły" if pl else "Details"}</summary><h2 class="sr-only" id="features-title">{"Szczegóły" if pl else "Details"}</h2><dl class="product-facts">{facts}</dl>{note if app["status"] == "live" else ""}</details>
+      <section class="product-details" id="app-story" aria-labelledby="features-title"><h2 id="features-title">{"Szczegóły" if pl else "Details"}</h2><dl class="product-facts">{facts}</dl>{note if app["status"] == "live" else ""}</section>
     </main>
     {footer("product-footer", pl, app)}'''
     destination = ROOT / app["path"].strip("/") / "index.html"

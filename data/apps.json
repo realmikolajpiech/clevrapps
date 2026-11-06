@@ -16,28 +16,52 @@
     "previewStyle": "jedziemy",
     "screenshots": [
       {
-        "src": "/assets/apps/previews/jedziemy-1-800.webp",
-        "small": "/assets/apps/previews/jedziemy-1-420.webp",
-        "width": 600,
-        "height": 1304,
-        "alt": "Jedziemy driving theory course with a category B learning path",
-        "caption": "Theory course"
+        "src": "/assets/apps/previews/jedziemy-home-anonymized-800.webp",
+        "small": "/assets/apps/previews/jedziemy-home-anonymized-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Jedziemy student home screen with a proposed lesson and the next scheduled lesson",
+        "caption": "Accept a proposed lesson"
       },
       {
-        "src": "/assets/apps/previews/jedziemy-2-800.webp",
-        "small": "/assets/apps/previews/jedziemy-2-420.webp",
-        "width": 600,
-        "height": 1304,
-        "alt": "Jedziemy driving theory practice session",
-        "caption": "Practice session"
+        "src": "/assets/apps/previews/jedziemy-instructor-800.webp",
+        "small": "/assets/apps/previews/jedziemy-instructor-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Jedziemy instructor day schedule with lessons and free slots",
+        "caption": "The instructor’s day"
       },
       {
-        "src": "/assets/apps/previews/jedziemy-3-800.webp",
-        "small": "/assets/apps/previews/jedziemy-3-420.webp",
-        "width": 600,
-        "height": 1304,
-        "alt": "Jedziemy driving theory question with answer feedback",
-        "caption": "Answer feedback"
+        "src": "/assets/apps/previews/jedziemy-calendar-anonymized-800.webp",
+        "small": "/assets/apps/previews/jedziemy-calendar-anonymized-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Jedziemy lesson calendar with booked lessons and open proposals",
+        "caption": "Every lesson in one calendar"
+      },
+      {
+        "src": "/assets/apps/previews/jedziemy-progress-800.webp",
+        "small": "/assets/apps/previews/jedziemy-progress-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Jedziemy course progress with completed, scheduled and remaining hours",
+        "caption": "Course hours at a glance"
+      },
+      {
+        "src": "/assets/apps/previews/jedziemy-arrangement-800.webp",
+        "small": "/assets/apps/previews/jedziemy-arrangement-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Jedziemy rescheduling request with a proposed lesson time",
+        "caption": "Agree on a lesson time"
+      },
+      {
+        "src": "/assets/apps/previews/jedziemy-preferences-800.webp",
+        "small": "/assets/apps/previews/jedziemy-preferences-420.webp",
+        "width": 800,
+        "height": 1739,
+        "alt": "Jedziemy driving preferences with weekly availability and lessons per week",
+        "caption": "Lessons that fit your week"
       }
     ],
     "links": [

@@ -1,0 +1,44 @@
+[
+  {
+    "file": "jedziemy-home-anonymized.png",
+    "source": "01-umow-kolejna-jazde.png",
+    "replacement": "Piotr Nowak",
+    "regions": [
+      {
+        "left": 332,
+        "top": 1089,
+        "width": 156,
+        "height": 48
+      }
+    ],
+    "changedPixels": 2714,
+    "changedPixelsOutsideNameRegions": 0
+  },
+  {
+    "file": "jedziemy-calendar-anonymized.png",
+    "source": "03-miej-plan-jazd-pod-reka.png",
+    "replacement": "Piotr Nowak",
+    "regions": [
+      {
+        "left": 429,
+        "top": 1092,
+        "width": 140,
+        "height": 48
+      },
+      {
+        "left": 524,
+        "top": 1722,
+        "width": 131,
+        "height": 52
+      },
+      {
+        "left": 522,
+        "top": 1897,
+        "width": 133,
+        "height": 55
+      }
+    ],
+    "changedPixels": 6591,
+    "changedPixelsOutsideNameRegions": 0
+  }
+]

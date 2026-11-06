@@ -32,6 +32,19 @@ icon = Image.open(PERSONAL / "jedziemy/app-logo.png").convert("RGBA")
 icon.resize((160, 160), Image.Resampling.LANCZOS).save(OUTPUT / "jedziemy-icon-160.webp", quality=86, method=6)
 for index, filename in enumerate(("teoria-path", "teoria-training", "teoria-answer"), 1):
     export(PERSONAL / "jedziemy" / f"{filename}.jpg", f"jedziemy-{index}", (420, 800))
+# Original simulator captures. Home/calendar use committed privacy-edited
+# masters; never export those two directly from the original name-bearing PNGs.
+JEDZIEMY_RAW = PROJECTS / "umowjazdy/screenshots/source"
+JEDZIEMY_CAPTURES = (
+    (ROOT / "assets/apps/sources/jedziemy-home-anonymized.png", "jedziemy-home-anonymized"),
+    (JEDZIEMY_RAW / "06-zaplanuj-jazdy-swoich-kursantow.png", "jedziemy-instructor"),
+    (ROOT / "assets/apps/sources/jedziemy-calendar-anonymized.png", "jedziemy-calendar-anonymized"),
+    (JEDZIEMY_RAW / "05-sledz-godziny-swojego-kursu.png", "jedziemy-progress"),
+    (JEDZIEMY_RAW / "04-ustal-szczegoly-z-instruktorem.png", "jedziemy-arrangement"),
+    (JEDZIEMY_RAW / "02-dopasuj-jazdy-do-swojego-dnia.png", "jedziemy-preferences"),
+)
+for source, stem in JEDZIEMY_CAPTURES:
+    export(source, stem, (420, 800))
 
 for index, filename in enumerate(("01-today", "02-medications", "03-history", "04-family", "05-flexible-schedules"), 1):
     export(PROJECTS / "health-app/artifacts/app-store/raw" / f"{filename}.png", f"doso-{index}", (420, 800))
