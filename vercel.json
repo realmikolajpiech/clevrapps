@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/apps/subby/terms.html",
+      "destination": "/apps/subby/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/apps/subby/terms/index.html",
+      "destination": "/apps/subby/terms/",
+      "permanent": true
+    }
+  ]
+}

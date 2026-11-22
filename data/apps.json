@@ -119,7 +119,7 @@
     "operatingSystem": "iOS, Android",
     "schemaCategory": "FinanceApplication",
     "path": "/apps/subby/",
-    "termsUrl": "/apps/subby/terms.html",
+    "termsUrl": "/apps/subby/terms/",
     "icon": "/assets/apps/subby-icon-160.webp",
     "headline": "Catch the charge before it happens.",
     "description": "Keep subscriptions, free trials and renewal dates in view. Get a reminder before the next charge and see what your subscriptions cost over time.",
