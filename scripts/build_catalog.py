@@ -148,7 +148,11 @@ def footer(css="directory-footer", pl=False, app=None):
     story = link(app["caseStudy"], "Historia projektu" if pl else "Project story", "case_study", app=app["id"], external=True) if app and app.get("caseStudy") else ""
     app_attribute = f' data-app="{e(app["id"])}"' if app else ""
     email = f'<a href="mailto:mikolaj@clevrapps.com" data-event="support"{app_attribute}>mikolaj@clevrapps.com</a>'
-    return f'''<span id="contact" aria-hidden="true"></span><footer class="{css}" id="support"><p>© <span data-year>2026</span> Clevr Apps</p><div>{story}{email}<a href="/privacy.html">{"Prywatność" if pl else "Privacy"}</a></div></footer>
+    terms = ""
+    if app and app.get("termsUrl"):
+        terms_label = "Regulamin" if pl else "Terms of Service"
+        terms = f'<a href="{e(app["termsUrl"])}">{terms_label}</a>'
+    return f'''<span id="contact" aria-hidden="true"></span><footer class="{css}" id="support"><p>© <span data-year>2026</span> Clevr Apps</p><div>{story}{email}<a href="/privacy.html">{"Prywatność" if pl else "Privacy"}</a>{terms}</div></footer>
     <script src="/script.js?v={VERSION}" defer></script>
   </body>
 </html>'''
