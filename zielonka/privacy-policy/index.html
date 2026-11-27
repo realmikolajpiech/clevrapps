@@ -63,7 +63,7 @@
         "isPartOf": { "@id": "https://clevrapps.com/#website" },
         "about": { "@type": "SoftwareApplication", "name": "Zielonka App" },
         "inLanguage": "pl",
-        "dateModified": "2026-11-01"
+        "dateModified": "2026-11-27"
       }
     </script>
   </head>
@@ -104,13 +104,13 @@
         <p class="kicker">Zielonka App / Prywatność</p>
         <h1>Polityka prywatności</h1>
         <div class="policy-meta">
-          <p>Ostatnia aktualizacja: 1 listopada 2026</p>
+          <p>Ostatnia aktualizacja: 27 listopada 2026</p>
           <p>Dotyczy aplikacji mobilnej Zielonka App i powiązanych usług.</p>
         </div>
       </header>
 
       <article class="policy-content">
-        <p class="policy-intro">Ta polityka opisuje dane przetwarzane przez Zielonka App: dziennik szkolny, opcjonalne powiadomienia oraz funkcje społecznościowe Spotted i Pomysły. Wyjaśnia również, co jest zapisywane na urządzeniu, co trafia na serwery i jak poprosić o usunięcie danych.</p>
+        <p class="policy-intro">Ta polityka opisuje dane przetwarzane przez Zielonka App: dziennik szkolny, opcjonalne powiadomienia i <a href="#kalendarz-google">integrację z Kalendarzem Google</a> oraz funkcje społecznościowe Spotted i Pomysły. Wyjaśnia również, co jest zapisywane na urządzeniu, co trafia na serwery i jak poprosić o usunięcie danych.</p>
         <section>
           <h2><span>01</span> Współadministratorzy i kontakt</h2>
           <p>Współadministratorami danych przetwarzanych w ramach Zielonka App są <strong>Oskar Minor, Mikołaj Piech, Bartłomiej Wąsik i Kamil Zdebski</strong>. Clevr Apps jest marką używaną przez Mikołaja Piecha, a nie odrębnym administratorem.</p>
@@ -160,8 +160,9 @@
           <ul>
           <li><strong>eduVULCAN / VULCAN i odpowiednia jednostka szkolna</strong> — logowanie oraz komunikacja z dziennikiem użytkownika.</li>
           <li><strong>Cloudflare</strong> — obsługa backendu społecznościowego, bazy danych i ruchu sieciowego.</li>
-          <li><strong>Oracle Cloud</strong> — infrastruktura serwera sprawdzającego zmiany dziennika i wysyłającego powiadomienia.</li>
+          <li><strong>Oracle Cloud</strong> — infrastruktura serwera obsługującego monitoring dziennika, powiadomienia i synchronizację z Kalendarzem Google.</li>
           <li><strong>Expo, Apple i Google</strong> — dostarczanie powiadomień na urządzenie.</li>
+          <li><strong>Google</strong> — autoryzacja konta i zapis wybranych wydarzeń szkolnych w Kalendarzu Google po włączeniu integracji.</li>
           <li><strong>Uprawnieni operatorzy i moderatorzy</strong> — utrzymanie, obsługa zgłoszeń i bezpieczeństwo. Inni użytkownicy otrzymują tylko treści udostępnione im w ramach społeczności lub wiadomości.</li>
           <li><strong>Dostawca poczty elektronicznej</strong> — obsługa korespondencji, gdy napiszesz do nas. Organy publiczne mogą otrzymać dane, jeżeli istnieje podstawa prawna.</li>
           </ul>
@@ -199,8 +200,19 @@
           <p>Pełnoletni rodzic lub opiekun może korzystać z dziennika w zakresie uprawnień nadanych mu w eduVULCAN. Wówczas wyświetlane i przetwarzane dane mogą dotyczyć niepełnoletniego ucznia. Kategoria 18+ nie oznacza, że aplikacja nigdy nie przetwarza danych dzieci. Nie wykorzystujemy takich danych do reklamy ani do publicznych profili społecznościowych.</p>
           <p>Jeżeli uważasz, że dane dziecka zostały ujawnione bez uprawnienia lub osoba niepełnoletnia uzyskała dostęp do społeczności, skontaktuj się z nami.</p>
         </section>
+        <section id="kalendarz-google">
+          <h2><span>11</span> Integracja z Kalendarzem Google</h2>
+          <p>Integracja jest opcjonalna. Możesz ją włączyć w aplikacji w <strong>Ustawienia → Kalendarz Google</strong>. Zależnie od wybranych opcji synchronizujemy plan lekcji, zastępstwa, odwołane lekcje, sprawdziany, dni wolne i praktyki.</p>
+          <ul>
+            <li><strong>Dostęp do danych.</strong> Po autoryzacji przez Google OAuth używamy uprawnienia <code>userinfo.email</code>, aby wyświetlić adres e-mail połączonego konta. Uprawnienie <code>calendar</code> pozwala aplikacji uzyskać listę kalendarzy, w których masz prawo zapisu, utworzyć kalendarz „ZielonkaAPP — Plan lekcji” i synchronizować wpisy z kalendarzem dedykowanym lub wybranym przez Ciebie. W istniejących kalendarzach aplikacja odczytuje, aktualizuje i usuwa wyłącznie wpisy utworzone przez Zielonka App.</li>
+            <li><strong>Wykorzystanie i udostępnianie.</strong> Dane uzyskane z Google API służą wyłącznie do obsługi tej integracji. W ramach synchronizacji nasz serwer przekazuje wybrane wydarzenia szkolne do Kalendarza Google. Danych uzyskanych z Google API nie udostępniamy w celach komercyjnych ani nie wykorzystujemy do reklam, profilowania lub analiz marketingowych. Danych uzyskanych z Google API i danych z nich wyprowadzonych nie przekazujemy zewnętrznym usługom AI/ML ani nie używamy do opracowywania, ulepszania lub trenowania modeli AI/ML ogólnego przeznaczenia.</li>
+            <li><strong>Ochrona i przechowywanie.</strong> Serwer komunikuje się z Google API przez HTTPS. Przez czas utrzymywania połączenia w aplikacji zapisujemy w bazie serwera zaszyfrowany token odświeżania, adres e-mail konta Google, ustawienia synchronizacji, identyfikator i nazwę wybranego kalendarza oraz dane potrzebne do rozpoznawania i aktualizowania zsynchronizowanych wpisów.</li>
+            <li><strong>Rozłączenie i usuwanie.</strong> Wybierz <strong>Rozłącz Kalendarz Google</strong> w ustawieniach integracji. Serwer wysyła do Google żądanie cofnięcia dostępu i usuwa ze swojej bazy połączenie, w tym token, adres e-mail, ustawienia oraz powiązania wydarzeń. Dane połączenia są usuwane z bazy także wtedy, gdy Google nie potwierdzi cofnięcia dostępu. Jeśli wybierzesz „Rozłącz i usuń wpisy”, serwer podejmie również próbę usunięcia zsynchronizowanych wydarzeń lub dedykowanego kalendarza. Dostęp możesz też cofnąć bezpośrednio w <a href="https://myaccount.google.com/permissions">ustawieniach konta Google</a>. W sprawie usunięcia danych z naszego serwera możesz napisać na <a href="mailto:mikolaj@clevrapps.com">mikolaj@clevrapps.com</a>.</li>
+          </ul>
+          <p>Korzystanie z danych uzyskanych z Google API i ich przekazywanie odbywa się zgodnie z <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, w tym z wymaganiami Limited Use.</p>
+        </section>
         <section>
-          <h2><span>11</span> Ta strona i zmiany polityki</h2>
+          <h2><span>12</span> Ta strona i zmiany polityki</h2>
           <p>Przy otwarciu tej strony serwer hostingowy otrzymuje informacje potrzebne do jej wyświetlenia, np. adres IP i dane żądania. Strona korzysta z Google Fonts do pobierania krojów pisma. Zasady dotyczące serwisu Clevr Apps opisuje również <a href="../../privacy.html">polityka prywatności strony</a>. Dla przetwarzania danych w Zielonka App właściwy jest niniejszy dokument.</p>
           <p>Polityka nie zastępuje regulaminu społeczności ani zgody na nowe cele przetwarzania. Aktualną wersję publikujemy pod adresem <a href="https://clevrapps.com/zielonka/privacy-policy">clevrapps.com/zielonka/privacy-policy</a>. Przy istotnej zmianie zasad poinformujemy użytkowników w aplikacji lub innym odpowiednim kanałem; data aktualizacji znajduje się na początku dokumentu.</p>
         </section>
